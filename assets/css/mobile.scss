@@ -109,7 +109,6 @@
     background-repeat: no-repeat;
     color: #fff;
     align-items: center;
-    gap: 15px;
     padding-top: 6%;
     
     h2{
@@ -118,41 +117,53 @@
         font-weight: 400;
         line-height: 28px;
         letter-spacing: -4%;
+
     }
 
     .delimiter{
-        margin-top: -2%;
+        margin-top: 2%;
+        margin-bottom: 10%;
+
     }
 
  
-    .program{
+    .programs{
+      
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+        width: 100%;
+
+        .program{
        
-        background: url(../img/mainprogramBg.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-        .programBg{
-            display: flex;
-            align-items: center;
-
-            gap: 8px;
-            background-color: #f7f7f71a;
-                    
-            div {
-            h3{
-                color: #FF5438;
-                font-size: 14.27px;
-                line-height: 25px;
-                letter-spacing: -1%;
-            }
-
-            p{
-                font-size: 10.7px;
-                line-height: 22.3px;
-                letter-spacing: 6%;
-                font-weight: bold;
-                text-align: left;
-            }
+            background: url(../img/mainprogramBg.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            .programBg{
+                display: flex;
+                align-items: center;
+    
+                gap: 8px;
+                background-color: #f7f7f71a;
+                        
+                div {
+                h3{
+                    color: #FF5438;
+                    font-size: 14.27px;
+                    line-height: 25px;
+                    letter-spacing: -1%;
+                }
+    
+                p{
+                    font-size: 10.7px;
+                    line-height: 22.3px;
+                    letter-spacing: 6%;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                }
             }
         }
     }
@@ -194,51 +205,59 @@
         font-weight: 400;
     }
 
-    .speaker{
+    .speakers{
         display: flex;
         gap: 12px;
+        flex-direction: column;
+        align-items: stretch;
 
-      
+        .speaker{
 
-        div{
-            .speakerDelimiter{
-                width: 10%;
-                margin-bottom: 2%;
-                margin-top: 2%;
+       display: flex;
+        gap: 12px;
+
+            div{
+                .speakerDelimiter{
+                    width: 10%;
+                    margin-bottom: 2%;
+                    margin-top: 2%;
+                }
+    
+                img{
+                    width: 107px;
+                    height: 106.4px;
+                }
+                .speakerDescrition{
+                    font-size: 9px;
+                    font-weight: bold;
+                    line-height: 17.1px;
+                    letter-spacing: -5%;
+                    color: #000;
+                  }
+    
+                h4{
+                  font-size: 15px;
+                  font-weight: bold;
+                  line-height: auto;
+                  letter-spacing: -2%;  
+                  padding-bottom: 3%;
+                }
+    
+                p{
+                    font-size: 10px;
+                  font-weight: bold;
+                  line-height: 14.9px;
+                  letter-spacing: -2%;
+                  color: #F78C89;
+                  text-align: left;
+    
+                }
+             
+                
             }
-
-            img{
-                width: 107px;
-                height: 106.4px;
-            }
-            .speakerDescrition{
-                font-size: 9px;
-                font-weight: bold;
-                line-height: 17.1px;
-                letter-spacing: -5%;
-                color: #000;
-              }
-
-            h4{
-              font-size: 15px;
-              font-weight: bold;
-              line-height: auto;
-              letter-spacing: -2%;  
-              padding-bottom: 3%;
-            }
-
-            p{
-                font-size: 10px;
-              font-weight: bold;
-              line-height: 14.9px;
-              letter-spacing: -2%;
-              color: #F78C89;
-              text-align: left;
-
-            }
-         
-            
         }
+        
+      
     }
     
     .seeMore{
