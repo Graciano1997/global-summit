@@ -1,0 +1,59 @@
+//the colors
+$firstColor:#ec5242;
+$secondColor:#fff;
+$thirdColor:#000;
+$fourthColor:#838383;
+$fithColor: #2C2C2C;
+$sixthColor:#515151;
+$seventhColor:#F8F8F8;
+$eighthColor:#595959;
+$ninethColor:#FF4F38;
+$tenthColor:#F78C89;
+$eleventhColor:#d3d3d3;
+$twelventhColor:#FF5438;
+$thirteenthColor:#f7f7f71a;
+$fourteenthColor:#868686;
+$fithteenthColor:#7a7a7a;
+$sixthteenthColor:#5F5F5F;
+$seventeenthColor:#E0E2E7;
+$eighteenthColor:#3b3e45;
+$nineteenthColor:#a04038;// delimiters
+
+//flex layout --column
+
+.flexColumnLayout{
+    display: flex;
+    flex-direction: column;
+}
+
+//header 1
+
+.firstHeader{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.secondHeader {
+    font-size: 20px;
+        line-height: 28px;
+}
+
+//img size
+ .imgResponsible{
+    width: 100%;
+    height: 100%;
+ }
+
+ //padding
+
+ .paddding3{
+    padding-left:3% ;
+    padding-right:3% ;
+ }
+
+ .paddding5{
+    padding-left: 5%;
+    padding-right: 5%;
+ }
+

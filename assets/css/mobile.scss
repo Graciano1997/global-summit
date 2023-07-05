@@ -1,3 +1,5 @@
+@import 'settings';
+
 .container {
     display: flex;
     flex-direction: column;
@@ -22,18 +24,13 @@
         border: transparent;
         margin-left: 20%;
         img {
-            width: 100%;
-            height: 100%;
+           @extend .imgResponsible;
         }
     }
 }
 
 .logoContainer {
-  
    padding-left: 15%;
-
- 
-   
 }
 
 /*Index page style*/
@@ -41,25 +38,22 @@
     background-image: url(../img/mobileBackground.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    justify-content: center;
     .headlineContent {
         padding-top: 22%;
-        color: #ec5242;
-        padding-left: 3%;
-        padding-right: 3%;
+        color: $firstColor;
+        @extend .paddding3;
 
     .headlineContentHeader{
  
         h1 {
-            font-size: 30px;
-            margin-bottom: 10px;
-            font-weight: normal;
-            
+            @extend .firstHeader; 
         }
         h2{
             background: url(../img/fontheaderBackground.jpg);
            -webkit-background-clip: text !important;
-            -webkit-text-fill-color: transparent;
+           background-clip: text !important;
+           -webkit-text-fill-color: transparent;
+           -webkit-text-fill-color: transparent;
             font-size: 30px;
             font-weight: bolder;
         }
@@ -67,13 +61,13 @@
 
     .headlineContentBody{
         margin-top: 22%;
-        background: #F8F8F8;
-        border: 4px solid #fff;
+        background: $seventhColor;
+        border: 4px solid $secondColor;
         p {
             font-size: 12px;
             line-height: 17px;
             letter-spacing: -1%;
-            color:#515151;
+            color:$sixthColor;
         }
     }
 
@@ -83,7 +77,7 @@
         padding-bottom: 15%;
         h2 {
             font-size: 20px;
-            color: #595959;
+            color: $eighthColor;
             font-weight: black;
         }
         
@@ -91,7 +85,7 @@
             margin-top: 1.5%;
             font-weight: bold;
             font-size: 13px;
-            color: #868686;
+            color: $fourteenthColor;
         }
     }
 
@@ -99,24 +93,21 @@
 }
 
 .mainProgramSection {
-
-    padding-left:3% ;
-    padding-right:3% ;
+    @extend .paddding3;
     display: flex;
     flex-direction: column;
     background: url(../img/mainprogramBg.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    color: #fff;
+    color: $secondColor;
     align-items: center;
     padding-top: 6%;
     
     h2{
         
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 28px;
+      @extend .secondHeader;
         letter-spacing: -4%;
+        font-weight: 400;
 
     }
 
@@ -129,8 +120,7 @@
  
     .programs{
       
-        display: flex;
-        flex-direction: column;
+        @extend .flexColumnLayout;
         gap: 15px;
         align-items: stretch;
         width: 100%;
@@ -146,11 +136,11 @@
                 align-items: center;
     
                 gap: 8px;
-                background-color: #f7f7f71a;
+                background-color: $thirteenthColor;
                         
                 div {
                 h3{
-                    color: #FF5438;
+                    color: $twelventhColor;
                     font-size: 14.27px;
                     line-height: 25px;
                     letter-spacing: -1%;
@@ -178,8 +168,8 @@
         width: 90%;
         margin-left:10% ;
         margin-right:10% ;
-        background: #FF4F38;
-        color:#fff;
+        background: $ninethColor;
+        color:$secondColor;
         border: transparent;
         height: 68px;
         text-align: center;
@@ -190,8 +180,7 @@
 
 .featuredSpeakerSection{
     padding-top: 15%;
-    padding-left:3% ;
-    padding-right:3% ;
+    @extend .paddding3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,8 +188,7 @@
     margin-bottom: 1%;
     
     h2{
-        font-size: 20px;
-        line-height: 28px;
+        @extend .secondHeader;
         letter-spacing: -5%;
         font-weight: 400;
     }
@@ -215,6 +203,7 @@
 
        display: flex;
         gap: 12px;
+        align-items: center;
 
             div{
                 .speakerDelimiter{
@@ -224,15 +213,16 @@
                 }
     
                 img{
-                    width: 107px;
-                    height: 106.4px;
+                     width: 107px;
+                     height: 106.4px;
+                    //@extend .imgResponsible;
                 }
                 .speakerDescrition{
                     font-size: 9px;
                     font-weight: bold;
                     line-height: 17.1px;
                     letter-spacing: -5%;
-                    color: #000;
+                    color: $thirdColor;
                   }
     
                 h4{
@@ -248,7 +238,7 @@
                   font-weight: bold;
                   line-height: 14.9px;
                   letter-spacing: -2%;
-                  color: #F78C89;
+                  color: $tenthColor;
                   text-align: left;
     
                 }
@@ -265,7 +255,7 @@
         justify-content: center;
         width: 90%;
         margin-top: 5%;
-        color:#000;
+        color:$thirdColor;
         border: transparent;
         padding-top: 2%;
         padding-bottom: 2%;
@@ -276,8 +266,8 @@
         line-height: 28px;
         letter-spacing: -5%;
         font-weight: bold;
-        background-color: #fff;
-        border: 1px solid #d3d3d3;
+        background-color: $secondColor;
+        border: 1px solid $eleventhColor;
     
     }
 }
@@ -291,31 +281,26 @@
     background-repeat: no-repeat;
     justify-content: center;
     display: flex;
+
     .aboutHeadlineContent {
         padding-top: 3%;
-        display: flex;
-        flex-direction: column;
-      
-   
+        @extend .flexColumnLayout;
 
     .aboutHeadlineContentHeader{
-        display: flex;
-        flex-direction: column;
+        @extend .flexColumnLayout;
         align-items: center;
         justify-content: center;
-        color: #ec5242;
+        color: $firstColor;
         padding-left: 1%;
         padding-right: 1%;
 
       
         h1 {
-            font-size: 30px;
-            margin-bottom: 10px;
-            font-weight: normal;
+            @extend .firstHeader; 
         }
 
         h2{
-            font-family: 'Lato', sans-serif;
+    
            font-size: 35px;
             font-weight: 900;
             text-align: center;
@@ -329,13 +314,12 @@
         padding-top: 5%;
         padding-bottom: 5%;
         margin-top: 18%;
-        background: #fff;
-        padding-left: 3%;
-        padding-right: 3%;
+        background: $secondColor;
+        @extend .paddding3;
         
         p {
             font-size: 14px;
-            color:#000000;
+            color:$thirdColor;
             font-weight: 400;
             text-align: center;
             letter-spacing: -6%;
@@ -349,7 +333,7 @@
         font-family: 'Gothic A1', sans-serif;
         h2 {
             font-size: 20px;
-            color: #595959;
+            color: $eighthColor;
             font-weight: black;
         }
         
@@ -357,11 +341,11 @@
             font-weight: bold;
             font-size: 12px;
             line-height: 25px;
-            color: #7a7a7a;
+            color: $fithteenthColor;
             text-align: center;
         }
         .email{
-            color: #5F5F5F;
+            color: $sixthteenthColor;
             font-weight: 1200;
             text-decoration: underline;
             padding-bottom: 6%;
@@ -377,12 +361,11 @@
     background-repeat: no-repeat;
     padding-top: 15%;
     padding-bottom: 8%;
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumnLayout;
     align-items: center;
     justify-content: center;
-    color: #fff;
-  //  gap: 22px;
+    color: $secondColor;
+
     
     .partnersImg{
         padding-top: 8%;
@@ -401,9 +384,8 @@
     
     }
     h2{
+        @extend .secondHeader;
         margin-top: -10%;
-        font-size: 20px;
-        line-height: 28px;
         letter-spacing: -1%;
         font-weight: 400;
 
@@ -411,17 +393,15 @@
 }
 
 .seePastSection {
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumnLayout;
     padding-top: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
+   @extend .paddding5;
 
     gap: 12px;
     padding-bottom: 10%;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #E0E2E7;
+    border-top: 1px solid $seventeenthColor;
 
     hr{
         margin-top: -1%;
@@ -429,20 +409,15 @@
  
 
     h2{
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 28px;
-        color: #2C2C2C;
+        @extend .secondHeader;
         letter-spacing: -2%;
         padding-top: 1%;
-
-        
-
+        font-weight: bold;
+        color: $fithColor;
     }
 
     p {
-        
-        color: #838383;
+        color: $fourthColor;
         font-weight: bold;
         font-size: 12px;
         line-height: 21px;
@@ -451,15 +426,11 @@
     }
 
     .seePastSectionPictures{
-        display: flex;
-        flex-direction: column;
+       @extend .flexColumnLayout;
         gap:25px;
         margin-top: 8%;
-     
-
         img{
-            width: 100%;
-            height: 100%;
+            @extend .imgResponsible;
         }
     }
 
@@ -468,42 +439,37 @@
 
 
 .creativeCommonSection{
-    display: flex;
-    flex-direction: column;
+    @extend .flexColumnLayout;
     padding-bottom: 5%;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
 
     h2{
-        
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 28px;
-        color: #2C2C2C;
+        @extend .secondHeader;
         letter-spacing: -2%;
+        font-weight: bold;
+        color: $fithColor;
         padding-top: 1%;
         text-align: center;
         padding-left: 20%;
         padding-right: 20%;
     }
+
     p{
         font-size: 16px;
         font-weight: bold;
         line-height: 21px;
         letter-spacing: -3%;
         text-align: center;
-        color: #838383;
-        padding-left: 5%;
-        padding-right: 5%;
+        color: $fourthColor;
+        @extend .paddding5;
         padding-bottom: 10%;
         padding-top: 5%;
-
     }
 
     img{
-        width: 100%;
-        height: 100%;
+        @extend .imgResponsible;
     }
 }
 
@@ -512,10 +478,10 @@
     padding-top: 8%;
     padding-right: 5%;
     padding-bottom: 8%;
-    background: #fff;
+    background: $secondColor;
     gap: 15px;
     font-size: 10px;
-    color: #3b3e45;
+    color: $eighteenthColor;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -524,15 +490,14 @@
     letter-spacing: -1%;
     div{
         img{
-            width: 100%;
-            height: 100%;
+            @extend .imgResponsible;
         }
     }
 }
 
 .delimiter{
     margin-top: 3%;
-    background: #a04038;
+    background: $nineteenthColor;
     height: 2px;
     width: 10%;
     border: transparent;
