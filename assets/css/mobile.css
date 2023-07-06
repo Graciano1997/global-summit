@@ -29,7 +29,10 @@
   padding-right: 5%;
 }
 
-.container {
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
