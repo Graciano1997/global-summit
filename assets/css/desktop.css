@@ -1,34 +1,3 @@
-.flexColumnLayout {
-  display: flex;
-  flex-direction: column;
-}
-
-.firstHeader {
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-weight: normal;
-}
-
-.secondHeader {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.imgResponsible {
-  width: 100%;
-  height: 100%;
-}
-
-.paddding3 {
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.paddding5 {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
 body {
   display: flex;
   padding: 0;
@@ -38,6 +7,31 @@ body {
 }
 
 @media (min-width: 768px) {
+  .flexColumnLayout {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstHeader, .headlineSection .headlineContent .headlineContentHeader h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .secondHeader, .partnerSection h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .imgResponsible, .featuredSpeakerSection .speakers .speaker div img, .mainProgramSection .programs .program .programBg div img {
+    width: 100%;
+    height: 100%;
+  }
+  .paddding3, .featuredSpeakerSection, .headlineSection .headlineContent {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .paddding5 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .hide {
     display: none;
   }
@@ -48,7 +42,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-bottom: -1%;
+    margin-bottom: 1%;
     width: 100%;
   }
   .headerContainer .navbar {
@@ -57,7 +51,11 @@ body {
     flex-direction: column;
     gap: 0;
   }
+  .headerContainer .navbar .hamburguer {
+    display: none;
+  }
   .headerContainer .navbar .firstNavBar {
+    display: block;
     background: #3E3E3E;
     color: #fff;
     padding-right: 10%;
@@ -76,15 +74,22 @@ body {
     font-weight: 400;
   }
   .headerContainer .navbar .secondNavbar {
+    display: block;
     margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 25px;
+  }
+  .headerContainer .navbar .secondNavbar .logoContainer {
+    display: block;
+    margin-left: 15%;
   }
   .headerContainer .navbar .secondNavbar .navlist {
+    display: block;
     display: flex;
     gap: 2rem;
-    padding-right: 10.8%;
+    padding-right: 10.4%;
     justify-self: flex-end;
     align-items: center;
   }
@@ -103,6 +108,71 @@ body {
     border: 7px solid #EC4327;
     padding: 0.8rem;
   }
+  /**HEADLINE SECTION **/
+  .headlineSection {
+    background-image: url(/assets/img/someDesktopImg/indexHeadlineBackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: -10%;
+    padding-bottom: -20%;
+    padding-left: 5%;
+  }
+  .headlineSection .headlineContent {
+    padding-top: 10%;
+    color: #ec5242;
+  }
+  .headlineSection .headlineContent .headlineContentHeader h1 {
+    font-size: 3rem;
+    line-height: 30px;
+    letter-spacing: -1%;
+    margin-top: 4%;
+  }
+  .headlineSection .headlineContent .headlineContentHeader h2 {
+    background: url(../img/fontheaderBackground.jpg);
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1%;
+    font-size: 4rem;
+    font-weight: 700;
+    width: 60%;
+    margin-top: 1%;
+  }
+  .headlineSection .headlineContent .headlineContentBody {
+    margin-top: 3%;
+    background: #F8F8F8;
+    border: 8px solid #fff;
+    width: 63%;
+  }
+  .headlineSection .headlineContent .headlineContentBody p {
+    font-size: 25.49px;
+    line-height: 36.1px;
+    letter-spacing: -1%;
+    color: #515151;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+  }
+  .headlineSection .headlineContent .headlineContentFooter {
+    margin-top: 4%;
+    font-family: "Gothic A1", sans-serif;
+    padding-bottom: 15%;
+  }
+  .headlineSection .headlineContent .headlineContentFooter h2 {
+    font-size: 42.48px;
+    color: #595959;
+    font-weight: black;
+  }
+  .headlineSection .headlineContent .headlineContentFooter p {
+    margin-top: 1.5%;
+    font-weight: bold;
+    font-size: 27.61px;
+    letter-spacing: -2%;
+    color: #868686;
+  }
+  /****/
   .aboutHeadlineSection {
     background-image: url(../img/someDesktopImg/aboutHeadlineBackground.svg);
     background-size: 100%;
@@ -110,11 +180,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 4%;
-    padding-bottom: 20%;
+    padding-top: 2%;
+    padding-bottom: 7%;
   }
   .aboutHeadlineSection .aboutHeadlineContent {
-    margin-top: 2%;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,21 +198,26 @@ body {
     text-align: center;
     font-weight: 700;
     width: 60%;
+    margin-top: -3%;
   }
   .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentHeader .delimiter {
     margin-top: 2%;
     width: 5%;
+    display: block;
   }
   .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentBody {
     margin-top: 2%;
     background: #fff;
-    width: 50%;
+    width: 70%;
     padding: 2%;
   }
   .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentBody p {
     font-size: 14px;
     line-height: 25px;
     text-align: center;
+  }
+  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentBody .globalSummit {
+    display: block;
   }
   .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter {
     margin-top: 2%;
@@ -169,6 +244,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 15%;
     margin-bottom: -2%;
   }
   .creativeCommonSection h2 {
@@ -198,6 +274,198 @@ body {
     width: 40%;
     height: 40%;
   }
+  /***program***/
+  .mainProgramSection {
+    color: white;
+    background: url(../img/mainprogramBg.svg);
+    background-repeat: repeat;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    justify-content: center;
+  }
+  .mainProgramSection h2 {
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -4%;
+    font-weight: 400;
+  }
+  .mainProgramSection #seeHoleProgram {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1%;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-top: 4%;
+    display: block;
+    padding-bottom: 1%;
+    display: block;
+  }
+  .mainProgramSection .delimiter {
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+  .mainProgramSection .programs {
+    margin-top: -6%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100fr;
+    font-size: 1.3em;
+    gap: 0.3em;
+    margin-bottom: 50px;
+    width: 80%;
+  }
+  .mainProgramSection .programs .program {
+    background: url(../img/mainprogramBg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100%;
+    gap: 12px;
+    padding-bottom: 10%;
+  }
+  .mainProgramSection .programs .program .programBg {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    gap: 8px;
+    background-color: rgba(247, 247, 247, 0.1019607843);
+  }
+  .mainProgramSection .programs .program .programBg div h3 {
+    color: #FF5438;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1%;
+    text-align: center;
+    font-weight: bold;
+  }
+  .mainProgramSection .programs .program .programBg div p {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 6%;
+    font-weight: bold;
+    text-align: center;
+  }
+  .mainProgramSection .join {
+    display: none;
+  }
+  /***program***/
+  /*****/
+  .featuredSpeakerSection {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 1%;
+  }
+  .featuredSpeakerSection h2 {
+    font-size: 30px;
+    letter-spacing: -1%;
+    line-height: 28px;
+    font-weight: 400;
+    margin-top: 3%;
+  }
+  .featuredSpeakerSection .delimiter {
+    margin-top: 0.8%;
+  }
+  .featuredSpeakerSection .speakers {
+    display: grid;
+    grid-template: repeat(3, 100fr)/repeat(2, 50fr);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+    margin-bottom: 3%;
+  }
+  .featuredSpeakerSection .speakers .speaker {
+    display: grid;
+    grid-template: repeat(1, 100fr)/20fr 70fr;
+    align-items: center;
+    -moz-column-gap: 2.5%;
+         column-gap: 2.5%;
+  }
+  .featuredSpeakerSection .speakers .speaker div .speakerDelimiter {
+    width: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  .featuredSpeakerSection .speakers .speaker div .speakerDescrition {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: -5%;
+    color: #000;
+  }
+  .featuredSpeakerSection .speakers .speaker div h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: -2%;
+    padding-bottom: 1%;
+  }
+  .featuredSpeakerSection .speakers .speaker div p {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: -9%;
+    color: #F78C89;
+    text-align: left;
+  }
+  .featuredSpeakerSection .seeMore {
+    display: none;
+  }
+  .mobileText {
+    display: none;
+  }
+  .desktopText {
+    display: block;
+  }
+  /*****/
+  .partnerSection {
+    padding-top: 0.5%;
+    padding-bottom: 3%;
+  }
+  .partnerSection .delimiter {
+    margin-top: 0.8%;
+  }
+  .partnerSection .partnersImg {
+    padding-top: 2%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    width: 100%;
+  }
+  .partnerSection .partnersImg div {
+    width: -moz-max-content;
+    width: max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .partnerSection .partnersImg div img {
+    width: 100%;
+    height: 100%;
+  }
+  .partnerSection h2 {
+    margin-top: 2%;
+    letter-spacing: -1%;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #8F8F91;
+  }
   .seePastSection {
     display: flex;
     flex-direction: column;
@@ -225,7 +493,7 @@ body {
     flex-direction: row;
     margin-top: 2%;
     justify-content: center;
-    gap: 8px;
+    gap: 2rem;
     flex-wrap: wrap;
     flex-grow: 1;
   }
@@ -234,7 +502,7 @@ body {
     height: 100%;
   }
   .delimiter {
-    height: 4px;
+    height: 3px;
     width: 5%;
   }
   .footerSection {
@@ -243,7 +511,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: -2;
     gap: 50px;
     padding-left: 20%;
   }
@@ -256,5 +524,9 @@ body {
     line-height: 28px;
     font-weight: bold;
     letter-spacing: -4%;
+  }
+  .white {
+    background: #fff;
+    color: black;
   }
 }/*# sourceMappingURL=desktop.css.map */

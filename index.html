@@ -5,20 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/desktop.css">
     <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/desktop.css">
     <title>Global Summit home Page</title>
 </head>
 
 <body class="container">
     
-    <header class="headerContainer">
+    <!-- <header class="headerContainer">
         <nav class="navbar">
             <button><img src="./assets/img/hamburguer.svg" alt="hamburguer icon"></button>
         </nav>
         <div class="logoContainer">
            <a href="index.html"><img src="./assets/img/logo.png" alt="Summit logo" ></a> 
         </div>
+    </header> -->
+    
+    <header class="headerContainer">
+        <nav class="navbar">
+
+            <div class="firstNavBar">
+                <ul class="navlist">
+                    <li><a href="#facebook"><img src="./assets/img/someDesktopImg/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#twitter"><img src="./assets/img/someDesktopImg/twitter.svg" alt="twiter"></a></li>
+                    <li>English</li>
+                    <li>My Page</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+
+            <button class="hamburguer"><img src="./assets/img/hamburguer.svg" alt="hamburguer icon" ></button>
+            <div class="secondNavbar">
+            <div class="logoContainer">
+                <a href="index.html"><img src="./assets/img/logo.png" alt="Summit logo" ></a>
+            </div> 
+                <ul class="navlist">
+                    <li><a href="about.html">About</a></li>
+                    <li>Program</li>
+                    <li>Join</li>
+                    <li>Sponsor</li>
+                    <li>News</li>
+                    <li class="campaign">CC Campaign</li>
+                </ul>
+            </div>
+            </nav>
     </header>
 
     <main>
@@ -49,8 +79,8 @@
             <div class="program">
                 <div class="programBg">
                     <div><img src="./assets/img/main program/lecture.svg" alt="lecture time"></div>
-                    <div>
-                        <h3>Lecture</h3>
+                    <div >
+                        <h3 id="moment">Lecture</h3>
                     </div>
                     <div>
                         <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
@@ -60,8 +90,8 @@
             <div class="program">
                 <div class="programBg">
                 <div><img src="./assets/img/main program/exhibition.svg" alt="exhibition time"></div>
-                <div>
-                    <h3>Lecture</h3>
+                <div >
+                    <h3 class="moment">CC Exhibition</h3>
                 </div>
                 <div>
                     <p>Appreciate various creations applying CC license of artists, organized from Art Center Nabi</p>
@@ -71,8 +101,8 @@
             <div class="program">
                 <div class="programBg">
                 <div><img src="./assets/img/main program/forum.svg" alt="forum time"></div>
-                <div>
-                    <h3>Lecture</h3>
+                <div >
+                    <h3 class="moment">Forum</h3>
                 </div>
                 <div>
                     <p>Have the time to share your thoughts and opinions with experts for each topic.</p>
@@ -83,8 +113,8 @@
             <div class="program">
                 <div class="programBg">
                 <div><img src="./assets/img/main program/worshop.svg" alt="get opportunity to connect with all affiliate  time"></div>
-                <div>
-                    <h3>Lecture</h3>
+                <div >
+                    <h3 class="moment">Workshop</h3>
                 </div>
                 <div>
                     <p>Try creating your own work using open source license rather than just watching at it.</p>
@@ -95,8 +125,8 @@
             <div class="program">
                 <div class="programBg">
                 <div><img src="./assets/img/main program/ignit.svg" alt=""></div>
-                <div>
-                    <h3>Lecture</h3>
+                <div >
+                    <h3 class="moment">CC Ignite</h3>
                 </div>
                    <div>
                        <p>get opportunities to network with CC affiliates around the world, also after the summit.</p>               
@@ -104,6 +134,7 @@
             </div>
             </div>
         </div>
+        <h3 id="seeHoleProgram">SEE THE WHOLE PROGRAM</h3>
 
             <button class="join">
                 Join CC Global Summit 2015
@@ -184,14 +215,35 @@
             </button>
             
         </section>
+        <section class="partnerSection hide">
+            <h2>Partner</h2>
+            <hr class="delimiter">
+            <div class="partnersImg">
+                <div class="partner"><img src="./assets/img/partners/mozilla.svg" alt="Mozilla org"></div>
+                <div class="partner"><img src="./assets/img/partners/google.svg" alt="Google"></div>
+                <div class="partner"><img src="./assets/img/partners/naver.svg" alt="Naver"></div>
+                <div class="partner"><img src="./assets/img/partners/daumkakao.svg" alt="Daumkakao"></div>
+                <div class="partner"><img src="./assets/img/partners/airbnb.svg" alt="Airbnb"></div>
+            </div>
+        </section>
     </main>
-    <footer class="footerSection">
+    <!-- <footer class="footerSection">
         <div><img src="./assets/img/footerLogo.svg" alt="Logo"></div>
         <div>
             <p>2015 Creative Commons Korea.</p>
                 <p> Some Rights Reserved.</p>
     </div>
-    </footer>
+    </footer> -->
+
+       <footer class="footerSection white hide">
+        <div><img src="./assets/img/someDesktopImg/logoWhite.png" alt="Logo"></div>
+        <div>
+            <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+    
+                <p>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
+                    자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
+    </div>
+    </footer>  
     <script src="./assets/js/index.js"></script>
 </body>
 
