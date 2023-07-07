@@ -587,3 +587,84 @@ body {
 #indexFooter{
     display: none;
 }
+
+.modal{
+
+    position: fixed;
+    color: $thirdColor;
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+// background:$sixthColor;  
+background: rgba(193, 199, 208, 0.8);
+ backdrop-filter: blur(20px);
+ background-size: 100%;
+ background-repeat: repeat;
+ padding-left: 2%;
+ top: 0;   
+ width: 98%;
+ //opacity: 0.88;
+
+ border-top-right-radius: 16px;
+ border-bottom-right-radius: 16px;
+.menuList{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    li{
+        list-style: none;
+        font-size: 30px;
+        padding: 3%;
+        line-height: 28px;
+        font-weight: 400;
+        a{
+            text-decoration: none;
+            color: $thirdColor;
+            img{
+           // border-radius: 50px;
+            border: 2px solid black;
+            }
+        }
+    }
+}
+.menuListDown{
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    li{
+        list-style: none;
+        font-size: 30px;
+        padding: 2%;
+
+        a{
+            text-decoration: none;
+            color: $thirdColor;
+        }
+    }
+}
+.closeBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 6%;
+
+}
+#close-menu{
+    font-size: 3rem;
+    margin-top: 10%;
+    transition: all 1.5s 0.5s ease-in-out;
+}
+
+transition: height 0.5s 2s ease-in;
+}
+
+@media  (max-width:767px) {
+    .hide {display: none;}
+}
+#logout{
+    color:$firstColor ;
+}

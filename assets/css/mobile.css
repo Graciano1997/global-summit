@@ -483,4 +483,80 @@ body {
 
 #indexFooter {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: rgba(193, 199, 208, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-size: 100%;
+  background-repeat: repeat;
+  padding-left: 2%;
+  top: 0;
+  width: 98%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transition: height 0.5s 2s ease-in;
+}
+.modal .menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.modal .menuList li {
+  list-style: none;
+  font-size: 30px;
+  padding: 3%;
+  line-height: 28px;
+  font-weight: 400;
+}
+.modal .menuList li a {
+  text-decoration: none;
+  color: #000;
+}
+.modal .menuList li a img {
+  border: 2px solid black;
+}
+.modal .menuListDown {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+.modal .menuListDown li {
+  list-style: none;
+  font-size: 30px;
+  padding: 2%;
+}
+.modal .menuListDown li a {
+  text-decoration: none;
+  color: #000;
+}
+.modal .closeBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 6%;
+}
+.modal #close-menu {
+  font-size: 3rem;
+  margin-top: 10%;
+  transition: all 1.5s 0.5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .hide {
+    display: none;
+  }
+}
+#logout {
+  color: #ec5242;
 }/*# sourceMappingURL=mobile.css.map */

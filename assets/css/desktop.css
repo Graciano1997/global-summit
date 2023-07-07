@@ -38,6 +38,9 @@ body {
   #noneVisible {
     display: none;
   }
+  .modal {
+    display: none;
+  }
   .hide {
     display: none;
   }

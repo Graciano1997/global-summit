@@ -145,8 +145,9 @@ for(let speak in speakersArray){
 // const sectionSpeakers=document.createElement('section');
 // sectionSpeakers.classList.add('featuredSpeakerSection');
 // sectionSpeakers.append();
-
-document.querySelector('.seeMore').insertAdjacentElement("beforebegin",divSpeakers);
+if(document.querySelector('.seeMore')!==null){
+    document.querySelector('.seeMore').insertAdjacentElement("beforebegin",divSpeakers);
+}
 
 }
 
@@ -154,8 +155,13 @@ generalConstructor(speakersArray);
 
 
 controla=0;
-var allHiden=document.querySelectorAll('#hide');
-var visibl=document.querySelectorAll('#visible');
+
+
+
+let allHiden=document.querySelectorAll('#hide');
+let visibl=document.querySelectorAll('#visible');
+
+if(document.querySelector('.seeMore')!==null){
 
 
 document.querySelector('.seeMore').addEventListener("click",()=>{
@@ -183,3 +189,15 @@ document.querySelector('.seeMore').addEventListener("click",()=>{
 
     }
 );
+}
+
+
+// the menu script
+
+document.querySelector('.hamburguer').addEventListener("click",()=>{
+    document.querySelector('.modal').classList.toggle('hide');
+});
+
+document.querySelector('.closeBtn').addEventListener("click",()=>{
+    document.querySelector('.modal').classList.toggle('hide');
+});
