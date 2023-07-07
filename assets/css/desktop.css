@@ -523,7 +523,7 @@ body {
     align-items: center;
     color: #fff;
     margin-bottom: -2;
-    gap: 50px;
+    gap: 20px;
     padding-left: 20%;
   }
   .footerSection div {
@@ -551,5 +551,22 @@ body {
   }
   #indexFooter {
     display: flex;
+  }
+  #sblogo {
+    width: 60%;
+    height: 60%;
+  }
+  #sblogoF {
+    width: 20%;
+    height: 20%;
+  }
+  .sblogo {
+    width: 60%;
+    height: 60%;
+    background: transparent;
+  }
+  #log {
+    width: 130px;
+    height: 80px;
   }
 }/*# sourceMappingURL=desktop.css.map */

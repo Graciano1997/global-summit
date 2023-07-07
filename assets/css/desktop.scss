@@ -657,7 +657,7 @@ padding-bottom: 3%;
         align-items: center;
         color: $secondColor;
         margin-bottom: -2;
-        gap: 50px;
+        gap: 20px;
         padding-left: 20%;
       
         div {
@@ -690,5 +690,24 @@ padding-bottom: 3%;
     display: flex;
 }
 
+#sblogo{
+width: 60%;
+height: 60%;
+}
+
+#sblogoF{
+width: 20%;
+height: 20%;
+}
+
+.sblogo{
+width: 60%;
+height: 60%;
+background: transparent;
+}
+#log{
+    width: 130px;
+    height: 80px;
+}
 }
 
