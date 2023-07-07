@@ -635,6 +635,7 @@ background: rgba(193, 199, 208, 0.8);
     justify-content: center;
     gap: 30px;
     width: 100%;
+ 
     li{
         list-style: none;
         font-size: 30px;
@@ -644,8 +645,19 @@ background: rgba(193, 199, 208, 0.8);
             text-decoration: none;
             color: $thirdColor;
         }
+       
+    
     }
+ 
+
 }
+.campaign{
+    color: $twentythirdColor;
+    border: 1px solid $twentythirdColor;
+    font-size: 30px;
+    padding: 1%;
+    
+ }
 .closeBtn{
     display: flex;
     flex-direction: column;
@@ -664,7 +676,8 @@ transition: height 0.5s 2s ease-in;
 
 @media  (max-width:767px) {
     .hide {display: none;}
+   .modal{overflow: hidden;} 
 }
 #logout{
-    color:$firstColor ;
+    color:$twentythirdColor ;
 }

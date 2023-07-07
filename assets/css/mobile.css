@@ -524,7 +524,7 @@ body {
 }
 .modal .menuListDown {
   position: absolute;
-  bottom: 3%;
+  bottom: 10%;
   left: 0;
   display: flex;
   justify-content: center;
@@ -539,6 +539,12 @@ body {
 .modal .menuListDown li a {
   text-decoration: none;
   color: #000;
+}
+.modal .campaign {
+  color: #EC4327;
+  border: 1px solid #EC4327;
+  font-size: 30px;
+  padding: 1%;
 }
 .modal .closeBtn {
   display: flex;
@@ -556,7 +562,10 @@ body {
   .hide {
     display: none;
   }
+  .modal {
+    overflow: hidden;
+  }
 }
 #logout {
-  color: #ec5242;
+  color: #EC4327;
 }/*# sourceMappingURL=mobile.css.map */
