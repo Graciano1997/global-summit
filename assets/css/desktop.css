@@ -2,7 +2,6 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  display: flex;
   flex-direction: column;
 }
 
@@ -11,20 +10,20 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .firstHeader, .headlineSection .headlineContent .headlineContentHeader h1 {
+  .firstHeader {
     font-size: 30px;
     margin-bottom: 10px;
     font-weight: normal;
   }
-  .secondHeader, .partnerSection h2 {
+  .secondHeader {
     font-size: 20px;
     line-height: 28px;
   }
-  .imgResponsible, .featuredSpeakerSection .speakers .speaker div img, .mainProgramSection .programs .program .programBg div img {
+  .imgResponsible {
     width: 100%;
     height: 100%;
   }
-  .paddding3, .featuredSpeakerSection, .headlineSection .headlineContent {
+  .paddding3 {
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -52,7 +51,6 @@ body {
     width: 100%;
     align-items: center;
     margin-bottom: 1%;
-    width: 100%;
   }
   .headerContainer .navbar {
     width: 100%;
@@ -83,7 +81,6 @@ body {
     font-weight: 400;
   }
   .headerContainer .navbar .secondNavbar {
-    display: block;
     margin-top: 1%;
     display: flex;
     align-items: center;
@@ -117,7 +114,7 @@ body {
     border: 7px solid #EC4327;
     padding: 0.8rem;
   }
-  /**HEADLINE SECTION **/
+  /** HEADLINE SECTION **/
   .headlineSection {
     background-image: url(../img/someDesktopImg/indexHeadlineBackground.svg);
     background-size: cover;
@@ -129,18 +126,20 @@ body {
   .headlineSection .headlineContent {
     padding-top: 10%;
     color: #ec5242;
+    padding-left: 3%;
+    padding-right: 3%;
   }
-  .headlineSection .headlineContent .headlineContentHeader h1 {
+  .headlineSection .headlineContent .headlineContentHeader .headerOne {
+    margin-bottom: 10px;
+    font-weight: normal;
     font-size: 3rem;
     line-height: 30px;
     letter-spacing: -1%;
     margin-top: 4%;
   }
-  .headlineSection .headlineContent .headlineContentHeader h2 {
+  .headlineSection .headlineContent .headlineContentHeader .headertwo {
     background: url(../img/fontheaderBackground.jpg);
     -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     letter-spacing: -1%;
     font-size: 4rem;
@@ -172,7 +171,7 @@ body {
   .headlineSection .headlineContent .headlineContentFooter h2 {
     font-size: 42.48px;
     color: #595959;
-    font-weight: black;
+    font-weight: bolder;
   }
   .headlineSection .headlineContent .headlineContentFooter p {
     margin-top: 1.5%;
@@ -181,7 +180,7 @@ body {
     letter-spacing: -2%;
     color: #868686;
   }
-  /****/
+  /***   */
   .aboutHeadlineSection {
     background-image: url(../img/someDesktopImg/aboutHeadlineBackground.svg);
     background-size: 100%;
@@ -198,10 +197,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentHeader h1 {
+  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentHeader .aboutHeaderone {
     display: none;
   }
-  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentHeader h2 {
+  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentHeader .aboutHeadertwo {
     color: #ec5242;
     font-size: 4rem;
     text-align: center;
@@ -231,7 +230,7 @@ body {
   .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter {
     margin-top: 2%;
   }
-  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter p {
+  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter .aboutHeadlinedescri {
     font-weight: bold;
     font-size: 16px;
     line-height: 25px;
@@ -256,7 +255,12 @@ body {
     margin-top: 15%;
     margin-bottom: -2%;
   }
-  .creativeCommonSection h2 {
+  .creativeCommonSection .delimiter {
+    margin-top: 1.3%;
+    height: 3px;
+    width: 5%;
+  }
+  .creativeCommonSection .creativeCommonHeader {
     margin-top: -12%;
     font-weight: bold;
     font-size: 30px;
@@ -264,10 +268,7 @@ body {
     letter-spacing: -3%;
     color: #2C2C2C;
   }
-  .creativeCommonSection .delimiter {
-    margin-top: 1.3%;
-  }
-  .creativeCommonSection p {
+  .creativeCommonSection .creativeCommonDescription {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -276,16 +277,15 @@ body {
     width: 60%;
     margin-top: -3%;
   }
-  .creativeCommonSection img {
+  .creativeCommonSection .creativeCommonImg {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: -8%;
     width: 40%;
     height: 40%;
   }
-  /***program***/
+  /***  program  ***/
   .mainProgramSection {
-    color: white;
     background: url(../img/mainprogramBg.svg);
     background-repeat: repeat;
     display: flex;
@@ -295,7 +295,7 @@ body {
     padding-bottom: 4%;
     justify-content: center;
   }
-  .mainProgramSection h2 {
+  .mainProgramSection .mainProgramHeader {
     font-size: 30px;
     line-height: 28px;
     letter-spacing: -4%;
@@ -308,13 +308,14 @@ body {
     font-weight: 400;
     text-decoration: underline;
     margin-top: 4%;
-    display: block;
     padding-bottom: 1%;
     display: block;
   }
   .mainProgramSection .delimiter {
     margin-top: 2%;
     margin-bottom: 10%;
+    height: 3px;
+    width: 5%;
   }
   .mainProgramSection .programs {
     margin-top: -6%;
@@ -347,7 +348,11 @@ body {
     gap: 8px;
     background-color: rgba(247, 247, 247, 0.1019607843);
   }
-  .mainProgramSection .programs .program .programBg div h3 {
+  .mainProgramSection .programs .program .programBg .programImage img {
+    width: 100%;
+    height: 100%;
+  }
+  .mainProgramSection .programs .program .programBg .phase .moment {
     color: #FF5438;
     font-size: 24px;
     line-height: 28px;
@@ -355,7 +360,7 @@ body {
     text-align: center;
     font-weight: bold;
   }
-  .mainProgramSection .programs .program .programBg div p {
+  .mainProgramSection .programs .program .programBg .activity .activitydescription {
     font-size: 12px;
     line-height: 25px;
     letter-spacing: 6%;
@@ -365,10 +370,10 @@ body {
   .mainProgramSection .join {
     display: none;
   }
-  /***program***/
-  /*****/
   .featuredSpeakerSection {
     padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -385,6 +390,8 @@ body {
   }
   .featuredSpeakerSection .delimiter {
     margin-top: 0.8%;
+    height: 3px;
+    width: 5%;
   }
   .featuredSpeakerSection .speakers {
     display: grid;
@@ -408,6 +415,10 @@ body {
     margin-bottom: 2%;
     margin-top: 2%;
   }
+  .featuredSpeakerSection .speakers .speaker div img {
+    width: 100%;
+    height: 100%;
+  }
   .featuredSpeakerSection .speakers .speaker div .speakerDescrition {
     font-size: 14px;
     font-weight: bold;
@@ -418,7 +429,7 @@ body {
   .featuredSpeakerSection .speakers .speaker div h4 {
     font-size: 24px;
     font-weight: bold;
-    line-height: auto;
+    line-height: 28;
     letter-spacing: -2%;
     padding-bottom: 1%;
   }
@@ -439,7 +450,7 @@ body {
   .desktopText {
     display: block;
   }
-  /*****/
+  /****   */
   .partnerSection {
     display: block;
     display: flex;
@@ -448,28 +459,29 @@ body {
   }
   .partnerSection .delimiter {
     margin-top: 0.8%;
+    height: 3px;
+    width: 5%;
   }
   .partnerSection .partnersImg {
     padding-top: 2%;
     margin-top: 1%;
     display: flex;
     flex-direction: row;
-    display: flex;
     gap: 3rem;
     justify-content: center;
     width: 100%;
   }
-  .partnerSection .partnersImg div {
+  .partnerSection .partnersImg .partner {
     width: -moz-max-content;
     width: max-content;
     height: -moz-max-content;
     height: max-content;
   }
-  .partnerSection .partnersImg div img {
+  .partnerSection .partnersImg .partner .part {
     width: 100%;
     height: 100%;
   }
-  .partnerSection h2 {
+  .partnerSection .partnerHeader {
     margin-top: 2%;
     letter-spacing: -1%;
     font-size: 30px;
@@ -482,7 +494,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .seePastSection h2 {
+  .seePastSection .seePastHeader {
     margin-top: -6%;
     font-weight: bold;
     font-size: 30px;
@@ -491,8 +503,10 @@ body {
   }
   .seePastSection .delimiter {
     margin-top: 1%;
+    height: 3px;
+    width: 5%;
   }
-  .seePastSection p {
+  .seePastSection .seePastDescription {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -508,13 +522,9 @@ body {
     flex-wrap: wrap;
     flex-grow: 1;
   }
-  .seePastSection .seePastSectionPictures div img {
+  .seePastSection .seePastSectionPictures .lastsummits .lastimg {
     width: 100%;
     height: 100%;
-  }
-  .delimiter {
-    height: 3px;
-    width: 5%;
   }
   .footerSection {
     background: #2E2E2E;
@@ -522,15 +532,15 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin-bottom: -2;
+    margin-bottom: -2%;
     gap: 50px;
     padding-left: 20%;
   }
-  .footerSection div {
+  .footerSection .footerSectionDiv {
     margin-top: -8%;
     margin-bottom: -8%;
   }
-  .footerSection div p {
+  .footerSection .footerSectionDiv .footerdescri {
     font-size: 14px;
     line-height: 28px;
     font-weight: bold;
