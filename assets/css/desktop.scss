@@ -8,7 +8,8 @@ body {
 @media  (min-width:768px) {
     @import 'settings';
     
-    
+    #hide{display: grid;}
+    #noneVisible{display: none;}
 
     .hide {   display: none;}
     
@@ -558,6 +559,8 @@ body {
 
     
 .partnerSection {
+    display: block;
+    display: flex;
 padding-top: 0.5%;
 padding-bottom: 3%;
 .delimiter{
@@ -593,6 +596,7 @@ padding-bottom: 3%;
         color: $twentyfourthColor;
 
     }
+ 
 }
 
 
@@ -671,7 +675,19 @@ padding-bottom: 3%;
         background: #fff;
         color: black;
     }
+    #footerIndex{
+        display: flex;}
 
+        .mobileFooter{
+            display: none;
+        }
+        .desktopFooter{
+            display: flex;
+        }
+        
+#indexFooter{
+    display: flex;
+}
 
 }
 

@@ -32,6 +32,12 @@ body {
     padding-left: 5%;
     padding-right: 5%;
   }
+  #hide {
+    display: grid;
+  }
+  #noneVisible {
+    display: none;
+  }
   .hide {
     display: none;
   }
@@ -432,6 +438,8 @@ body {
   }
   /*****/
   .partnerSection {
+    display: block;
+    display: flex;
     padding-top: 0.5%;
     padding-bottom: 3%;
   }
@@ -528,5 +536,17 @@ body {
   .white {
     background: #fff;
     color: black;
+  }
+  #footerIndex {
+    display: flex;
+  }
+  .mobileFooter {
+    display: none;
+  }
+  .desktopFooter {
+    display: flex;
+  }
+  #indexFooter {
+    display: flex;
   }
 }/*# sourceMappingURL=desktop.css.map */

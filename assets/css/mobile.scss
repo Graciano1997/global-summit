@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+.hide {display: none;}
 
 .headerContainer {
     display: flex;
@@ -48,7 +49,8 @@ body {
     }
 }
 
-
+#hide{display: none;}
+#noneVisible{display: flex;}
 
 /*Index page style*/
 .headlineSection {
@@ -290,35 +292,35 @@ body {
 
     }
 
-    .seeMore {
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        margin-top: 5%;
-        color: $thirdColor;
-        border: transparent;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        gap: 8px;
-        align-items: center;
-        border-radius: 4px;
-        font-size: 11px;
-        line-height: 28px;
-        letter-spacing: -5%;
-        font-weight: bold;
-        background-color: $secondColor;
-        border: 1px solid $eleventhColor;
-        display: block;
-        margin-bottom: 2%;
-
-        img{
-            margin-left: 2%;
-        }
-      
-    }
 }
 
 
+.seeMore {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 5%;
+    color: $thirdColor;
+    border: transparent;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    gap: 8px;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 28px;
+    letter-spacing: -5%;
+    font-weight: bold;
+    background-color: $secondColor;
+    border: 1px solid $eleventhColor;
+    display: block;
+    margin-bottom: 2%;
+
+    img{
+        margin-left: 2%;
+    }
+  
+}
 
 /*About page style*/
 .aboutHeadlineSection {
@@ -412,6 +414,7 @@ body {
 }
 
 .partnerSection {
+    display: none;
     background: url(../img/footerBackground.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -421,6 +424,7 @@ body {
     align-items: center;
     justify-content: center;
     color: $secondColor;
+    
 
 
     .partnersImg {
@@ -535,6 +539,7 @@ body {
     display: flex;
     padding-top: 8%;
     padding-right: 5%;
+    padding-left: 5%;
     padding-bottom: 8%;
     background: $secondColor;
     gap: 15px;
@@ -552,6 +557,7 @@ body {
             @extend .imgResponsible;
         }
     }
+
 }
 
 .delimiter {
@@ -562,8 +568,22 @@ body {
     border: transparent;
 }
 .mobileText{ display: block;}
-.hide {   display: none;}
+
+
+
 .desktopText{
     display: none;
 }
-    
+#footerIndex{
+    display: none;}
+
+    .mobileFooter{
+        display: flex;
+    }
+    .desktopFooter{
+        display: none;
+    }
+
+#indexFooter{
+    display: none;
+}
