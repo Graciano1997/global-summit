@@ -16,6 +16,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+    - [ Project Apresentation](#video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -64,6 +65,12 @@ This project consists of a website with two main pages: the home page and the ab
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://graciano1997.github.io/global-summit/)
+<!-- Video Apresentation -->
+
+##  Video Apresentation <a name="video"></a>
+
+- [Video Apresentation](https://www.loom.com/share/76184a6d44b149569ba8bfff69d5dc33)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
