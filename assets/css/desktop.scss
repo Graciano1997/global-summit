@@ -270,7 +270,6 @@
     margin-top: 15%;
     margin-bottom: -2%;
 
-
     .creativeCommonHeader {
       margin-top: -12%;
       font-weight: bold;
@@ -299,10 +298,7 @@
     }
   }
 
-
-
   .mainProgramSection {
-
     background: url(../img/mainprogramBg.svg);
     background-repeat: repeat;
     display: flex;
@@ -330,27 +326,21 @@
       display: block;
     }
 
-
     .programs {
       margin-top: -6%;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 100fr;
       font-size: 1.3em;
-
       gap: 0.4px;
-
       margin-bottom: 50px;
       width: 80%;
-
-      
 
       .program {
         background: url(../img/mainprogramBg.svg);
         background-size: cover;
         background-position: center;
         background-repeat: repeat;
-       
         height: 100%;
         gap: 12px;
         padding-bottom: 10%;
@@ -433,7 +423,6 @@
     }
 
     .speakers {
-
       display: grid;
       grid-template: repeat(3, 100fr) / repeat(2, 50fr);
       margin-left: 10%;

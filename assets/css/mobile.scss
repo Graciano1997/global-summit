@@ -571,13 +571,10 @@ body {
     column-gap: 8px;
     padding-top: 3%;
     justify-items: center;
-
     padding-bottom: 3%;
-  
     font-size: 10px;
     color: $eighteenthColor;
     font-weight: bold;
- 
     line-height: 13.1px;
     letter-spacing: -1%;
 
@@ -625,7 +622,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-
   background: rgba(193, 199, 208, 0.8);
   backdrop-filter: blur(20px);
   background-size: 100%;
@@ -633,8 +629,6 @@ body {
   padding-left: 2%;
   top: 0;
   width: 98%;
-
-
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
 
@@ -653,7 +647,6 @@ body {
       a {
         text-decoration: none;
         color: $thirdColor;
-    
       }
     }
   }

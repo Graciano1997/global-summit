@@ -64,7 +64,7 @@ function buildSpeaker(speaker, hide) {
   const divSpeaker = document.createElement('div');
   divSpeaker.classList.add('speaker');
   if (hide === 'last') {
-    divSpeaker.id='hidespeaker';
+    divSpeaker.id = 'hidespeaker';
   }
   divSpeaker.append(divImg, divBody);
   return divSpeaker;
