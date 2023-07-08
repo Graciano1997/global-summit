@@ -1,0 +1,57 @@
+
+$firstColor:#ec5242;
+$secondColor:#fff;
+$thirdColor:#000;
+$fourthColor:#838383;
+$fithColor: #2c2c2c;
+$sixthColor:#515151;
+$seventhColor:#f8f8f8;
+$eighthColor:#595959;
+$ninethColor:#ff4f38;
+$tenthColor:#f78c89;
+$eleventhColor:#d3d3d3;
+$twelventhColor:#ff5438;
+$thirteenthColor:#f7f7f71a;
+$fourteenthColor:#868686;
+$fithteenthColor:#7a7a7a;
+$sixthteenthColor:#5f5f5f;
+$seventeenthColor:#e0e2e7;
+$eighteenthColor:#3b3e45;
+$nineteenthColor:#a04038;
+$twentiethColor:#2e2e2e;
+$twentyfirstColor:#3e3e3e;
+$twentysecondColor:#f07f7e;
+$twentythirdColor:#ec4327;
+$twentyfourthColor:#8f8f91;
+$twentyfithColor:#272a31;
+
+.flexColumnLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstHeader {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.secondHeader {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.imgResponsible {
+  width: 100%;
+  height: 100%;
+}
+
+.paddding3 {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.paddding5 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
