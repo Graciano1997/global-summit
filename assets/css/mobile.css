@@ -377,6 +377,7 @@ body {
   font-size: 30px;
   margin-bottom: 10px;
   font-weight: normal;
+  margin-top: 15%;
 }
 .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentHeader h2 {
   font-size: 35px;
@@ -394,7 +395,7 @@ body {
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
-  margin-top: 18%;
+  margin-top: 8%;
   background: #fff;
   padding-left: 3%;
   padding-right: 3%;
@@ -656,6 +657,14 @@ body {
   }
   #hidespeaker {
     display: none;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .headerContainer {
+    position: absolute;
+    top: 3%;
+    left: 7%;
   }
 }
 #logout {

@@ -385,11 +385,13 @@ body {
       color: $firstColor;
       padding-left: 1%;
       padding-right: 1%;
+      // margin-top: 10%;
 
       h1 {
         font-size: 30px;
         margin-bottom: 10px;
         font-weight: normal;
+        margin-top: 15%;
       }
 
       h2 {
@@ -411,7 +413,7 @@ body {
       align-items: center;
       padding-top: 5%;
       padding-bottom: 5%;
-      margin-top: 18%;
+      margin-top: 8%;
       background: $secondColor;
       padding-left: 3%;
       padding-right: 3%;
@@ -698,6 +700,13 @@ body {
 @media (max-width: 767px) {
   .hide { display: none; }
   #hidespeaker { display: none; }
+  .logoContainer { display: none; }
+
+  .headerContainer {
+    position: absolute;
+    top: 3%;
+    left: 7%;
+  }
 }
 
 #logout {
