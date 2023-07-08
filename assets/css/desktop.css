@@ -31,7 +31,7 @@ body {
     padding-left: 5%;
     padding-right: 5%;
   }
-  #hide {
+  #hidespeaker {
     display: grid;
   }
   #noneVisible {
@@ -92,12 +92,13 @@ body {
     margin-left: 15%;
   }
   .headerContainer .navbar .secondNavbar .navlist {
-    display: block;
+    margin-right: 10%;
     display: flex;
     gap: 2rem;
-    padding-right: 10.4%;
-    justify-self: flex-end;
+    padding-right: 0;
     align-items: center;
+    justify-content: space-between;
+    width: 50%;
   }
   .headerContainer .navbar .secondNavbar .navlist li {
     color: #868686;
@@ -112,7 +113,9 @@ body {
   .headerContainer .navbar .secondNavbar .navlist .campaign {
     color: #ec4327;
     border: 7px solid #ec4327;
-    padding: 0.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 0;
   }
   /** HEADLINE SECTION **/
   .headlineSection {
@@ -307,7 +310,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 100fr;
     font-size: 1.3em;
-    gap: 0.3em;
+    gap: 0.4px;
     margin-bottom: 50px;
     width: 80%;
   }
@@ -342,7 +345,7 @@ body {
     line-height: 28px;
     letter-spacing: -1%;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
   }
   .mainProgramSection .programs .program .programBg .activity .activitydescription {
     font-size: 12px;
