@@ -98,7 +98,7 @@ controla = 0;
 let allHiden = document.querySelectorAll('#hidespeaker');
 let visibl = document.querySelectorAll('#visible');
 
-//if (document.querySelector('.seeMore') !== null) {
+if (document.querySelector('.seeMore') !== null) {
   document.querySelector('.seeMore').addEventListener('click', () => {
     if (document.querySelector('#hidespeaker') !== null) {
       allHiden = document.querySelectorAll('#hidespeaker');
@@ -119,7 +119,7 @@ let visibl = document.querySelectorAll('#visible');
       document.querySelector('.seeMore').appendChild(btnIcon);
     }
   });
-//}
+}
 
 document.querySelector('.hamburguer').addEventListener('click', () => {
   document.querySelector('.modal').classList.toggle('hide');

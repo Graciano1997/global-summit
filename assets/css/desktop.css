@@ -113,7 +113,8 @@
     border: 7px solid #ec4327;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    padding-right: 0;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   /** HEADLINE SECTION **/
   .headlineSection {
@@ -483,6 +484,9 @@
     line-height: 28px;
     letter-spacing: -3%;
   }
+  .seePastSection .delimiter {
+    margin-top: 1%;
+  }
   .seePastSection .seePastDescription {
     font-weight: bold;
     font-size: 16px;
@@ -491,13 +495,11 @@
     margin-top: 1%;
   }
   .seePastSection .seePastSectionPictures {
-    display: flex;
-    flex-direction: row;
     margin-top: 2%;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    display: grid;
+    grid-template: 100fr/50fr 50fr;
+    justify-items: center;
+    gap: 1px;
   }
   .seePastSection .seePastSectionPictures .lastsummits .lastimg {
     width: 100%;
@@ -516,11 +518,11 @@
     -moz-column-gap: 0;
          column-gap: 0;
   }
-  .indexfooter .footerbody .logo img {
+  .indexfooter .footerbody .logo .logoImg {
     width: 90%;
     height: 90%;
   }
-  .indexfooter .footerbody .description p {
+  .indexfooter .footerbody .description .descriptionParagra {
     font-size: 14px;
     line-height: 28px;
     letter-spacing: -4%;
@@ -542,5 +544,12 @@
   #indexFooter {
     display: flex;
     flex-direction: column;
+  }
+  .black {
+    background: #272a31;
+    color: #fff;
+  }
+  .footerAbout {
+    display: none;
   }
 }/*# sourceMappingURL=desktop.css.map */

@@ -15,11 +15,12 @@
   .hide {
     display: none;
   }
-      .delimiter {
-       height: 3px;
-       width: 3%;
-       background: $firstColor;
-     }
+
+  .delimiter {
+    height: 3px;
+    width: 3%;
+    background: $firstColor;
+  }
 
   .headerContainer {
     margin-top: 0;
@@ -100,7 +101,8 @@
             border: 7px solid $twentythirdColor;
             padding-top: 0.8rem;
             padding-bottom: 0.8rem;
-            padding-right: 0;
+            padding-right: 5px;
+            padding-left: 5px;
           }
         }
       }
@@ -379,7 +381,8 @@
         gap: 12px;
         padding-bottom: 10%;
         transition: all 0.5s 0.7s ease-in-out;
-        .program:hover{
+
+        .program:hover {
           border: 1px solid $secondColor;
         }
 
@@ -392,7 +395,6 @@
           align-items: center;
           padding-left: 4%;
           padding-right: 4%;
-
 
           .programImage {
             .programImageItem {
@@ -533,8 +535,6 @@
     padding-top: 0.5%;
     padding-bottom: 3%;
 
- 
-
     .partnersImg {
       padding-top: 2%;
       margin-top: 1%;
@@ -578,11 +578,9 @@
       letter-spacing: -3%;
     }
 
-    // .delimiter {
-    //   margin-top: 1%;
-    //   height: 3px;
-    //   width: 5%;
-    // }
+    .delimiter {
+      margin-top: 1%;
+    }
 
     .seePastDescription {
       font-weight: bold;
@@ -593,13 +591,11 @@
     }
 
     .seePastSectionPictures {
-      display: flex;
-      flex-direction: row;
       margin-top: 2%;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      flex-grow: 1;
+      display: grid;
+      grid-template: 100fr / 50fr 50fr;
+      justify-items: center;
+      gap: 1px;
 
       .lastsummits {
         .lastimg {
@@ -623,14 +619,14 @@
       column-gap: 0;
 
       .logo {
-        img {
+        .logoImg {
           width: 90%;
           height: 90%;
         }
       }
 
       .description {
-        p {
+        .descriptionParagra {
           font-size: 14px;
           line-height: 28px;
           letter-spacing: -4%;
@@ -644,7 +640,6 @@
   //   display: grid;
   //   grid-template: 100fr / 50fr 50fr;
   // }
-
 
   // .footerSectionDiv{
   //   background: red;
@@ -671,5 +666,14 @@
   #indexFooter {
     display: flex;
     flex-direction: column;
+  }
+
+  .black {
+    background: $twentyfithColor;
+    color: $secondColor;
+  }
+
+  .footerAbout {
+    display: none;
   }
 }
