@@ -440,7 +440,6 @@
   }
   /****   */
   .partnerSection {
-    display: block;
     display: flex;
     padding-top: 0.5%;
     padding-bottom: 3%;
@@ -452,7 +451,6 @@
     flex-direction: row;
     gap: 3rem;
     justify-content: center;
-    width: 100%;
   }
   .partnerSection .partnersImg .partner {
     width: -moz-max-content;
