@@ -218,12 +218,6 @@
           width: 60%;
           margin-top: -3%;
         }
-
-        // .delimiter {
-        //   margin-top: 2%;
-        //   width: 5%;
-        //   display: block;
-        // }
       }
 
       .aboutHeadlineContentBody {
@@ -276,11 +270,6 @@
     margin-top: 15%;
     margin-bottom: -2%;
 
-    // .delimiter {
-    //   margin-top: 1.3%;
-    //   height: 3px;
-    //   width: 5%;
-    // }
 
     .creativeCommonHeader {
       margin-top: -12%;
@@ -310,12 +299,10 @@
     }
   }
 
-  /***  program  ***/
+
 
   .mainProgramSection {
-    //  @extend .paddding3;
 
-    // color: white;
     background: url(../img/mainprogramBg.svg);
     background-repeat: repeat;
     display: flex;
@@ -325,9 +312,6 @@
     padding-bottom: 4%;
     justify-content: center;
 
-    // background: rgb(34, 1, 1);
-    // padding-left: 10%;
-    //padding-right: 10%;
     .mainProgramHeader {
       font-size: 30px;
       line-height: 28px;
@@ -346,12 +330,6 @@
       display: block;
     }
 
-    // .delimiter {
-    //   margin-top: 2%;
-    //   margin-bottom: 10%;
-    //   height: 3px;
-    //   width: 5%;
-    // }
 
     .programs {
       margin-top: -6%;
@@ -359,24 +337,20 @@
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 100fr;
       font-size: 1.3em;
-      //column-gap: 0.5px;
+
       gap: 0.4px;
-      // justify-items: center;
+
       margin-bottom: 50px;
       width: 80%;
 
-      // @extend .flexColumnLayout;
-      // gap: 15px;
-      // align-items: stretch;
-      // width: 100%;
+      
 
       .program {
         background: url(../img/mainprogramBg.svg);
         background-size: cover;
         background-position: center;
         background-repeat: repeat;
-        //background-repeat: no-repeat;
-        //  margin: 15%;
+       
         height: 100%;
         gap: 12px;
         padding-bottom: 10%;
@@ -459,7 +433,7 @@
     }
 
     .speakers {
-      //        gap: 12px;
+
       display: grid;
       grid-template: repeat(3, 100fr) / repeat(2, 50fr);
       margin-left: 10%;
@@ -531,7 +505,6 @@
 
   .partnerSection {
     display: flex;
-    
     padding-top: 0.5%;
     padding-bottom: 3%;
 
@@ -542,7 +515,6 @@
       flex-direction: row;
       gap: 3rem;
       justify-content: center;
-   
 
       .partner {
         width: max-content;
@@ -637,16 +609,6 @@
     }
   }
 
-  // .footerSection{
-  //   display: grid;
-  //   grid-template: 100fr / 50fr 50fr;
-  // }
-
-  // .footerSectionDiv{
-  //   background: red;
-  //   display: flex;
-  // flex-direction: column;
-  // }
   .white {
     background: #fff;
     color: black;

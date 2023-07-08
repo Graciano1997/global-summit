@@ -571,16 +571,13 @@ body {
     column-gap: 8px;
     padding-top: 3%;
     justify-items: center;
-    // padding-right: 5%;
-    // padding-left: 5%;
+
     padding-bottom: 3%;
-    // background: $secondColor;
-    // gap: 15px;
+  
     font-size: 10px;
     color: $eighteenthColor;
     font-weight: bold;
-    // justify-content: center;
-    // align-items: center;
+ 
     line-height: 13.1px;
     letter-spacing: -1%;
 
@@ -628,7 +625,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  // background:$sixthColor;
+
   background: rgba(193, 199, 208, 0.8);
   backdrop-filter: blur(20px);
   background-size: 100%;
@@ -636,7 +633,7 @@ body {
   padding-left: 2%;
   top: 0;
   width: 98%;
-  //opacity: 0.88;
+
 
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -656,10 +653,7 @@ body {
       a {
         text-decoration: none;
         color: $thirdColor;
-        // img {
-        //   // border-radius: 50px;
-        //   border: 2px solid black;
-        // }
+    
       }
     }
   }

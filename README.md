@@ -1,10 +1,14 @@
-# global-summit
 <a name="readme-top"></a>
+
 <div align="center">
-  <br/>
-  <h3><b>Global Summit Project</b></h3>
+  
+  <h3><b> Capstone-summit</b></h3>
 
 </div>
+
+
+<!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -17,20 +21,21 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-   - [Run tests](#run-tests)
-- [👥 Authors](#authors)
+  - [Run tests](#run-tests)
+- [👥 Author](#author)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Portofolio-Graciano
- <a name="about-project"></a>
+# 📖 Capstone-summit <a name="about-project"></a>
 
-**Portofolio-Graciano**,Is a project that show that I understood how to parse a Figma design to create a UI, how to place elements on the page using Flexbox, Grid , media-query 
-and how to use images and backgrounds to enhance the look of the website.
+**Capstone-summit** is a project that demonstrates that I did undersand the last four week main topics, hard skill (html,css and JavaScript ) and Soft skills (video apresentation of the software) and so much. 
+This project consists of a website with two main pages: the home page and the about page.
+
+
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -39,126 +44,154 @@ and how to use images and backgrounds to enhance the look of the website.
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://html.spec.whatwg.org/multipage/#toc-semantics/">Html</a></li>
-    <li><a href="https://www.w3.org/standards/webdesign/htmlcss">Css</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/">css</a></li>
+    <li><a href="https://www.w3schools.com/Javascript/">Javascript</a></li>
   </ul>
 </details>
 
+<!-- Features -->
+
 ### Key Features <a name="key-features"></a>
 
-- **Portofolio:responsive desktop,mobile ...**
--**Understand how to create UIs adaptable to different screen sizes using media queries.**
-- **Understand how to parse a Figma design to create a UI.**
-- **Understand how to create UIs adaptable to different screen sizes using media queries.**
-- **Understand how to create popup windows to mobile and desktop.**
+- **Demo of Linters**
+- **Demo of home and about Summit Page**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://graciano1997.github.io/portofolio-graciano/)
 
+- [Live Demo Link](https://graciano1997.github.io/global-summit/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- GETTING STARTED -->
+
 ## 💻 Getting Started <a name="getting-started"></a>
-
-
-To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-- Web Browser
-- CodeEditor
-- Git
+
+- Modern  Web Browser such as Chrome, Safari, Firefox...
+- code editor
+- Javascript enabled
+- node js
+- npm
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-  ```sh
-  cd [your_folder_name]
-  git clone https://github.com/Graciano1997/portofolio-graciano.git
-```
+git clone https://github.com/Graciano1997/global-summit.git
+
 ### Install
 
-Install this project with:
-
-  ```sh
-  npm install
+To install all dependencies, run:
 ```
+npm install
+```
+
 ### Usage
 
 To run the project, execute the following command:
 
-- Open the index.html with the LiveServer extension
+To run the project, follow these instructions:
+
+- Clone this repo to your local machine.
+
 ### Run tests
 
 To run tests, run the following command:
 
-- To track HTML linter errors run:
+- Track HTML linter errors run:
 ```
 npx hint .
 ```
-- To track CSS linter errors run::
+- Track CSS linter errors run:
 ```
 npx stylelint "**/*.{css,scss}"
 ```
-- To track JavaScript linter errors run:
+- Track JavaScript linter errors run:
 ```
 npx eslint .
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- AUTHOR -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
-👤 **Graciano Henrique Gra_Soft**
+👤 Graciano Henrique
 
-- GitHub: [@Graciano1997](https://github.com/Graciano1997)
-- Twitter: [@GracianoSoft](https://twitter.com/GracianoSoft)
-- Linkedin: [@GracianoSoft](https://www.linkedin.com/in/graciano-manuel-henrique-175527221/)
+- GitHub: [@Graciano Henrique](https://github.com/Graciano1997/)
 
-👤 **Ayokunnumi**
-
-- GitHub: [@Ayokunnumi](https://github.com/Ayokunnumi1)
-- Twitter: [@Ayokunnumi](https://twitter.com/AyokunnumiA)
-- Linkedin: [@Ayokunnumi](https://www.linkedin.com/in/graciano-manuel-henrique-175527221/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Implement the desktop-version**
+- [ ] **Animation**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+
+Feel free to check the [issues page](https://github.com/Graciano1997/global-summit/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
+If you like this project give it a⭐️
 
-If you like this project share it and rate it :
-⭐️⭐️⭐️⭐️
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank **Hussen** and my Team 
+- Microverse 
+- Design idea by Cindy Shin in Behance, the author of the original design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- LICENSE -->
+
 ## 📝 License <a name="license"></a>
+
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Project Images
+
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(232).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(233).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(234).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(235).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(236).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(237).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(238).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(239).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(240).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(241).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(242).png)
+![Snapshot](./assets/img/screen/Captura%20de%20Ecrã%20(243).png)
