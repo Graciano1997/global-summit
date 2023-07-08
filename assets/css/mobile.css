@@ -654,11 +654,18 @@ body {
   .hide {
     display: none;
   }
+  #hidespeaker {
+    display: none;
+  }
 }
 #logout {
   color: #ec4327;
 }
 
 .hide {
+  display: none;
+}
+
+#hidespeaker {
   display: none;
 }/*# sourceMappingURL=mobile.css.map */

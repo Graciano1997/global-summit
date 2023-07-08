@@ -64,7 +64,7 @@ function buildSpeaker(speaker, hide) {
   const divSpeaker = document.createElement('div');
   divSpeaker.classList.add('speaker');
   if (hide === 'last') {
-    divSpeaker.id = 'hide';
+    divSpeaker.id='hidespeaker';
   }
   divSpeaker.append(divImg, divBody);
   return divSpeaker;
@@ -95,12 +95,13 @@ function generalConstructor(speakersArray) {
 
 generalConstructor(speakersArray);
 controla = 0;
-let allHiden = document.querySelectorAll('#hide');
+let allHiden = document.querySelectorAll('#hidespeaker');
 let visibl = document.querySelectorAll('#visible');
-if (document.querySelector('.seeMore') !== null) {
+
+//if (document.querySelector('.seeMore') !== null) {
   document.querySelector('.seeMore').addEventListener('click', () => {
-    if (document.querySelector('#hide') !== null) {
-      allHiden = document.querySelectorAll('#hide');
+    if (document.querySelector('#hidespeaker') !== null) {
+      allHiden = document.querySelectorAll('#hidespeaker');
       allHiden.forEach((v) => {
         v.id = 'visible';
       });
@@ -109,7 +110,7 @@ if (document.querySelector('.seeMore') !== null) {
       if (document.querySelector('#visible')) {
         visibl = document.querySelectorAll('#visible');
         visibl.forEach((h) => {
-          h.id = 'hide';
+          h.id = 'hidespeaker';
         });
       }
       document.querySelector('.seeMore').textContent = 'More';
@@ -118,7 +119,7 @@ if (document.querySelector('.seeMore') !== null) {
       document.querySelector('.seeMore').appendChild(btnIcon);
     }
   });
-}
+//}
 
 document.querySelector('.hamburguer').addEventListener('click', () => {
   document.querySelector('.modal').classList.toggle('hide');
