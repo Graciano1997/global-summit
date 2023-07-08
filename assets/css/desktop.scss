@@ -1,9 +1,3 @@
-body {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
-}
 
 @media (min-width: 768px) {
   @import 'settings';
@@ -21,6 +15,11 @@ body {
   .hide {
     display: none;
   }
+      .delimiter {
+       height: 3px;
+       width: 3%;
+       background: $firstColor;
+     }
 
   .headerContainer {
     margin-top: 0;
@@ -379,6 +378,10 @@ body {
         height: 100%;
         gap: 12px;
         padding-bottom: 10%;
+        transition: all 0.5s 0.7s ease-in-out;
+        .program:hover{
+          border: 1px solid $secondColor;
+        }
 
         .programBg {
           display: flex;
@@ -389,6 +392,7 @@ body {
           align-items: center;
           padding-left: 4%;
           padding-right: 4%;
+
 
           .programImage {
             .programImageItem {
@@ -448,11 +452,9 @@ body {
       margin-top: 3%;
     }
 
-    // .delimiter {
-    //   margin-top: 0.8%;
-    //   height: 3px;
-    //   width: 5%;
-    // }
+    .delimiter {
+      margin-top: 0.8%;
+    }
 
     .speakers {
       //        gap: 12px;
@@ -460,7 +462,7 @@ body {
       grid-template: repeat(3, 100fr) / repeat(2, 50fr);
       margin-left: 10%;
       margin-right: 10%;
-      margin-top: 3%;
+      margin-top: -7%;
       column-gap: 2%;
       margin-bottom: 3%;
 
@@ -493,7 +495,7 @@ body {
           h4 {
             font-size: 24px;
             font-weight: bold;
-            line-height: 28;
+            line-height: 28px;
             letter-spacing: -2%;
             padding-bottom: 1%;
           }
@@ -531,11 +533,7 @@ body {
     padding-top: 0.5%;
     padding-bottom: 3%;
 
-    // .delimiter {
-    //   margin-top: 0.8%;
-    //   height: 3px;
-    //   width: 5%;
-    // }
+ 
 
     .partnersImg {
       padding-top: 2%;
@@ -612,29 +610,47 @@ body {
     }
   }
 
-  .footerSection {
-    background: $twentiethColor;
+  .indexfooter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: $secondColor;
-    margin-bottom: -2%;
-    gap: 50px;
-    padding-left: 20%;
 
-    .footerSectionDiv {
-      margin-top: -8%;
-      margin-bottom: -8%;
+    .footerbody {
+      display: grid;
+      padding: 5%;
+      justify-items: center;
+      grid-template: 100fr / 50fr 50fr;
+      column-gap: 0;
 
-      .footerdescri {
-        font-size: 14px;
-        line-height: 28px;
-        font-weight: bold;
-        letter-spacing: -4%;
+      .logo {
+        img {
+          width: 90%;
+          height: 90%;
+        }
+      }
+
+      .description {
+        p {
+          font-size: 14px;
+          line-height: 28px;
+          letter-spacing: -4%;
+          font-weight: bold;
+        }
       }
     }
   }
 
+  // .footerSection{
+  //   display: grid;
+  //   grid-template: 100fr / 50fr 50fr;
+  // }
+
+
+  // .footerSectionDiv{
+  //   background: red;
+  //   display: flex;
+  // flex-direction: column;
+  // }
   .white {
     background: #fff;
     color: black;
@@ -654,5 +670,6 @@ body {
 
   #indexFooter {
     display: flex;
+    flex-direction: column;
   }
 }

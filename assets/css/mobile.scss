@@ -560,7 +560,7 @@ body {
 
 .footerAbout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5%;
@@ -719,3 +719,4 @@ body {
 
 .hide { display: none; }
 #hidespeaker { display: none; }
+.indexfooter { display: none; }

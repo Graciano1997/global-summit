@@ -524,7 +524,7 @@ body {
 
 .footerAbout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5%;
@@ -667,5 +667,9 @@ body {
 }
 
 #hidespeaker {
+  display: none;
+}
+
+.indexfooter {
   display: none;
 }/*# sourceMappingURL=mobile.css.map */
