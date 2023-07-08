@@ -7,10 +7,19 @@ body {
   flex-direction: column;
 }
 
+.delimiter {
+  background: $tenthColor;
+  height: 2px;
+  width: 7%;
+  border: transparent;
+}
+
 .headerContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
 
   .navbar {
     width: 100%;
@@ -45,8 +54,6 @@ body {
   }
 }
 
-
-/* Index page style */
 .headlineSection {
   background-image: url(../img/mobileBackground.svg);
   background-size: cover;
@@ -115,17 +122,18 @@ body {
   flex-direction: column;
   background: url(../img/mainprogramBg.svg);
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   color: $secondColor;
   align-items: center;
   padding-top: 6%;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
 
   h2 {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: -4%;
     font-weight: 400;
+    margin-top: 2%;
   }
 
   #seeHoleProgram {
@@ -135,10 +143,6 @@ body {
   .delimiter {
     margin-top: 2%;
     margin-bottom: 10%;
-    background: $nineteenthColor;
-    height: 2px;
-    width: 10%;
-    border: transparent;
   }
 }
 
@@ -147,21 +151,31 @@ body {
 .programs {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  align-items: stretch;
+  gap: 8px;
   width: 100%;
 
   .program {
     background: url(../img/mainprogramBg.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 1%;
+    color: $eleventhColor;
 
     .programBg {
       display: grid;
-      grid-template: 100fr / 10fr 20fr 70fr;
+      grid-template: 100fr / 20fr 20fr  60fr;
       align-items: center;
-      column-gap: 3px;
+      column-gap: 8px;
       background-color: $thirteenthColor;
+
+      .programImage {
+        padding-left: 15px;
+
+        .programImageItem {
+          width: 100%;
+          height: 100%;
+        }
+      }
 
       .phase {
         h3 {
@@ -174,12 +188,11 @@ body {
 
       .activity {
         .activitydescription {
-          font-size: 10px;
+          font-size: 11px;
           line-height: 22.3px;
           letter-spacing: 6%;
-          font-weight: bold;
           text-align: left;
-          width: 100%;
+          padding: 8px;
         }
       }
     }
@@ -188,18 +201,17 @@ body {
 
 /* btn join us */
 .join {
-  margin-top: 8%;
+  margin-top: 12%;
   font-size: 16px;
   letter-spacing: -1%;
   line-height: 28px;
-  font-weight: bolder;
   width: 90%;
   margin-left: 10%;
   margin-right: 10%;
   background: $ninethColor;
   color: $secondColor;
   border: transparent;
-  height: 68px;
+  padding: 6%;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -222,15 +234,12 @@ body {
     letter-spacing: -5%;
     font-weight: 400;
     margin-top: -10%;
+    color: $twentyfithColor;
   }
 
   .delimiter {
     margin-top: -2%;
     margin-bottom: 10%;
-    background: $nineteenthColor;
-    height: 2px;
-    width: 10%;
-    border: transparent;
   }
 }
 
@@ -239,7 +248,7 @@ body {
   gap: 12px;
   flex-direction: column;
   align-items: stretch;
-  margin-top: 4%;
+  margin-top: -4%;
 
   .speaker {
     display: flex;
@@ -248,7 +257,7 @@ body {
 
     div {
       .speakerDelimiter {
-        width: 10%;
+        width: 7%;
         margin-bottom: 2%;
         margin-top: 2%;
       }
@@ -263,7 +272,8 @@ body {
         font-weight: bold;
         line-height: 17.1px;
         letter-spacing: -5%;
-        color: $thirdColor;
+        color: $twentyfithColor;
+        font-style: normal;
       }
 
       h4 {
@@ -281,6 +291,7 @@ body {
         letter-spacing: -2%;
         color: $tenthColor;
         text-align: left;
+        font-style: italic;
       }
     }
   }
@@ -291,7 +302,6 @@ body {
   justify-content: center;
   width: 90%;
   margin-top: 5%;
-  color: $thirdColor;
   padding-top: 2%;
   padding-bottom: 2%;
   gap: 8px;
@@ -300,13 +310,57 @@ body {
   font-size: 11px;
   line-height: 28px;
   letter-spacing: -5%;
-  font-weight: bold;
+  font-weight: 700;
   background-color: $secondColor;
-  border: 1px solid $eleventhColor transparent;
+  border: 1px solid $eleventhColor;
   margin-bottom: 2%;
+  color: $twentyfithColor;
 
   .btnbackground {
     margin-left: 2%;
+  }
+}
+
+.creativeCommonSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+
+  .delimiter {
+    margin-top: 3%;
+  }
+
+  .creativeCommonHeader {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    font-weight: bold;
+    color: $fithColor;
+    padding-top: 1%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 20%;
+  }
+
+  .creativeCommonDescription {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: -3%;
+    text-align: center;
+    color: $fourthColor;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
+
+  .creativeCommonImg {
+    width: 90%;
+    height: 100%;
   }
 }
 
@@ -348,10 +402,6 @@ body {
         display: none;
         margin-top: 2%;
         margin-bottom: 10%;
-        background: $nineteenthColor;
-        height: 2px;
-        width: 10%;
-        border: transparent;
       }
     }
 
@@ -368,7 +418,7 @@ body {
 
       p {
         font-size: 14px;
-        color: $thirdColor;
+        color: $twentyfithColor;
         font-weight: 400;
         text-align: center;
         letter-spacing: -6%;
@@ -390,15 +440,20 @@ body {
         font-weight: bolder;
       }
 
-      p {
+      .aboutHeadlinedescri {
         font-weight: bold;
         font-size: 12px;
         line-height: 25px;
         color: $fithteenthColor;
         text-align: center;
+        padding-left: 12%;
+        padding-right: 12%;
       }
 
       .email {
+        text-align: center;
+        padding-left: 12%;
+        padding-right: 12%;
         color: $sixthteenthColor;
         font-weight: bolder;
         text-decoration: underline;
@@ -412,7 +467,7 @@ body {
   background: url(../img/footerBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 8%;
   display: flex;
   flex-direction: column;
@@ -420,21 +475,24 @@ body {
   justify-content: center;
   color: $secondColor;
 
+  .partnerHeader {
+    margin-top: -1%;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1%;
+    font-weight: 400;
+    margin-bottom: 2%;
+  }
+
   .partnersImg {
-    padding-top: 8%;
+    padding-top: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
     gap: 12px;
     justify-content: space-around;
-
-    .partnerHeader {
-      font-size: 20px;
-      line-height: 28px;
-      margin-top: -10%;
-      letter-spacing: -1%;
-      font-weight: 400;
-    }
 
     .partner {
       .part {
@@ -477,84 +535,71 @@ body {
     line-height: 21px;
     letter-spacing: -3%;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .seePastSectionPictures {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 25px;
     margin-top: 8%;
 
     .lastsummits {
-      width: 100%;
-      height: 100%;
+      width: 90%;
+
+      .lastimg {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
 
-.creativeCommonSection {
+.footerAbout {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 5%;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  margin-top: 5%;
-
-  .creativeCommonHeader {
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -2%;
-    font-weight: bold;
-    color: $fithColor;
-    padding-top: 1%;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  .creativeCommonDescription {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 21px;
-    letter-spacing: -3%;
-    text-align: center;
-    color: $fourthColor;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 10%;
-    padding-top: 5%;
-  }
-
-  .creativeCommonImg {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.footerSection {
-  display: flex;
-  padding-top: 8%;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-bottom: 8%;
-  background: $secondColor;
-  gap: 15px;
-  font-size: 10px;
-  color: $eighteenthColor;
-  font-weight: bold;
   justify-content: center;
-  align-items: center;
-  line-height: 13.1px;
-  letter-spacing: -1%;
+  padding: 5%;
 
-  .footerSectionDiv {
-    .footerSectionimg {
+  .footerSection {
+    display: grid;
+    grid-template: 100% / 50% 50%;
+    column-gap: 8px;
+    padding-top: 3%;
+    justify-items: center;
+    // padding-right: 5%;
+    // padding-left: 5%;
+    padding-bottom: 3%;
+    // background: $secondColor;
+    // gap: 15px;
+    font-size: 10px;
+    color: $eighteenthColor;
+    font-weight: bold;
+    // justify-content: center;
+    // align-items: center;
+    line-height: 13.1px;
+    letter-spacing: -1%;
+
+    .footerSectionLogo {
+      padding: 2%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .footerSectionDiv {
+      display: flex;
+      align-items: end;
       width: 100%;
-      height: 100%;
     }
   }
 }
-
 .mobileText { display: block; }
 
 .desktopText {
@@ -611,11 +656,10 @@ body {
       a {
         text-decoration: none;
         color: $thirdColor;
-
-        img {
-          // border-radius: 50px;
-          border: 2px solid black;
-        }
+        // img {
+        //   // border-radius: 50px;
+        //   border: 2px solid black;
+        // }
       }
     }
   }

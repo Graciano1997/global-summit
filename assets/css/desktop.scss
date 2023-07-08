@@ -168,7 +168,7 @@ body {
         font-family: 'Gothic A1', sans-serif;
         padding-bottom: 15%;
 
-        h2 {
+        .headerContentFooter {
           font-size: 42.48px;
           color: $eighthColor;
           font-weight: bolder;
@@ -217,11 +217,11 @@ body {
           margin-top: -3%;
         }
 
-        .delimiter {
-          margin-top: 2%;
-          width: 5%;
-          display: block;
-        }
+        // .delimiter {
+        //   margin-top: 2%;
+        //   width: 5%;
+        //   display: block;
+        // }
       }
 
       .aboutHeadlineContentBody {
@@ -274,11 +274,11 @@ body {
     margin-top: 15%;
     margin-bottom: -2%;
 
-    .delimiter {
-      margin-top: 1.3%;
-      height: 3px;
-      width: 5%;
-    }
+    // .delimiter {
+    //   margin-top: 1.3%;
+    //   height: 3px;
+    //   width: 5%;
+    // }
 
     .creativeCommonHeader {
       margin-top: -12%;
@@ -307,7 +307,6 @@ body {
       height: 40%;
     }
   }
-
 
   /***  program  ***/
 
@@ -345,12 +344,12 @@ body {
       display: block;
     }
 
-    .delimiter {
-      margin-top: 2%;
-      margin-bottom: 10%;
-      height: 3px;
-      width: 5%;
-    }
+    // .delimiter {
+    //   margin-top: 2%;
+    //   margin-bottom: 10%;
+    //   height: 3px;
+    //   width: 5%;
+    // }
 
     .programs {
       margin-top: -6%;
@@ -390,7 +389,7 @@ body {
           padding-right: 4%;
 
           .programImage {
-            img {
+            .programImageItem {
               width: 100%;
               height: 100%;
             }
@@ -447,11 +446,11 @@ body {
       margin-top: 3%;
     }
 
-    .delimiter {
-      margin-top: 0.8%;
-      height: 3px;
-      width: 5%;
-    }
+    // .delimiter {
+    //   margin-top: 0.8%;
+    //   height: 3px;
+    //   width: 5%;
+    // }
 
     .speakers {
       //        gap: 12px;
@@ -530,11 +529,11 @@ body {
     padding-top: 0.5%;
     padding-bottom: 3%;
 
-    .delimiter {
-      margin-top: 0.8%;
-      height: 3px;
-      width: 5%;
-    }
+    // .delimiter {
+    //   margin-top: 0.8%;
+    //   height: 3px;
+    //   width: 5%;
+    // }
 
     .partnersImg {
       padding-top: 2%;
@@ -579,11 +578,11 @@ body {
       letter-spacing: -3%;
     }
 
-    .delimiter {
-      margin-top: 1%;
-      height: 3px;
-      width: 5%;
-    }
+    // .delimiter {
+    //   margin-top: 1%;
+    //   height: 3px;
+    //   width: 5%;
+    // }
 
     .seePastDescription {
       font-weight: bold;

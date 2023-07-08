@@ -63,7 +63,7 @@ body {
   }
   .headerContainer .navbar .firstNavBar {
     display: block;
-    background: #3E3E3E;
+    background: #3e3e3e;
     color: #fff;
     padding-right: 10%;
   }
@@ -107,11 +107,11 @@ body {
   }
   .headerContainer .navbar .secondNavbar .navlist li a {
     text-decoration: none;
-    color: #F07F7E;
+    color: #f07f7e;
   }
   .headerContainer .navbar .secondNavbar .navlist .campaign {
-    color: #EC4327;
-    border: 7px solid #EC4327;
+    color: #ec4327;
+    border: 7px solid #ec4327;
     padding: 0.8rem;
   }
   /** HEADLINE SECTION **/
@@ -149,7 +149,7 @@ body {
   }
   .headlineSection .headlineContent .headlineContentBody {
     margin-top: 3%;
-    background: #F8F8F8;
+    background: #f8f8f8;
     border: 8px solid #fff;
     width: 63%;
   }
@@ -168,7 +168,7 @@ body {
     font-family: "Gothic A1", sans-serif;
     padding-bottom: 15%;
   }
-  .headlineSection .headlineContent .headlineContentFooter h2 {
+  .headlineSection .headlineContent .headlineContentFooter .headerContentFooter {
     font-size: 42.48px;
     color: #595959;
     font-weight: bolder;
@@ -208,11 +208,6 @@ body {
     width: 60%;
     margin-top: -3%;
   }
-  .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentHeader .delimiter {
-    margin-top: 2%;
-    width: 5%;
-    display: block;
-  }
   .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentBody {
     margin-top: 2%;
     background: #fff;
@@ -241,7 +236,7 @@ body {
   .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter .email {
     margin-top: 0.5%;
     letter-spacing: 2%;
-    color: #5F5F5F;
+    color: #5f5f5f;
     font-weight: bolder;
     text-decoration: underline;
     padding-bottom: 6%;
@@ -255,18 +250,13 @@ body {
     margin-top: 15%;
     margin-bottom: -2%;
   }
-  .creativeCommonSection .delimiter {
-    margin-top: 1.3%;
-    height: 3px;
-    width: 5%;
-  }
   .creativeCommonSection .creativeCommonHeader {
     margin-top: -12%;
     font-weight: bold;
     font-size: 30px;
     line-height: 28px;
     letter-spacing: -3%;
-    color: #2C2C2C;
+    color: #2c2c2c;
   }
   .creativeCommonSection .creativeCommonDescription {
     font-weight: bold;
@@ -311,12 +301,6 @@ body {
     padding-bottom: 1%;
     display: block;
   }
-  .mainProgramSection .delimiter {
-    margin-top: 2%;
-    margin-bottom: 10%;
-    height: 3px;
-    width: 5%;
-  }
   .mainProgramSection .programs {
     margin-top: -6%;
     display: grid;
@@ -348,12 +332,12 @@ body {
     gap: 8px;
     background-color: rgba(247, 247, 247, 0.1019607843);
   }
-  .mainProgramSection .programs .program .programBg .programImage img {
+  .mainProgramSection .programs .program .programBg .programImage .programImageItem {
     width: 100%;
     height: 100%;
   }
   .mainProgramSection .programs .program .programBg .phase .moment {
-    color: #FF5438;
+    color: #ff5438;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1%;
@@ -387,11 +371,6 @@ body {
     line-height: 28px;
     font-weight: 400;
     margin-top: 3%;
-  }
-  .featuredSpeakerSection .delimiter {
-    margin-top: 0.8%;
-    height: 3px;
-    width: 5%;
   }
   .featuredSpeakerSection .speakers {
     display: grid;
@@ -438,7 +417,7 @@ body {
     font-weight: bold;
     line-height: 21px;
     letter-spacing: -9%;
-    color: #F78C89;
+    color: #f78c89;
     text-align: left;
   }
   .featuredSpeakerSection .seeMore {
@@ -456,11 +435,6 @@ body {
     display: flex;
     padding-top: 0.5%;
     padding-bottom: 3%;
-  }
-  .partnerSection .delimiter {
-    margin-top: 0.8%;
-    height: 3px;
-    width: 5%;
   }
   .partnerSection .partnersImg {
     padding-top: 2%;
@@ -487,7 +461,7 @@ body {
     font-size: 30px;
     line-height: 28px;
     font-weight: 400;
-    color: #8F8F91;
+    color: #8f8f91;
   }
   .seePastSection {
     display: flex;
@@ -500,11 +474,6 @@ body {
     font-size: 30px;
     line-height: 28px;
     letter-spacing: -3%;
-  }
-  .seePastSection .delimiter {
-    margin-top: 1%;
-    height: 3px;
-    width: 5%;
   }
   .seePastSection .seePastDescription {
     font-weight: bold;
@@ -527,7 +496,7 @@ body {
     height: 100%;
   }
   .footerSection {
-    background: #2E2E2E;
+    background: #2e2e2e;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mobile.css">
-    <link rel="stylesheet" href="./assets/css/desktop.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./assets/css/desktop.css"> -->
 
     <title>About Global Summit</title>
 </head>
@@ -116,17 +116,15 @@
             </div>
         </section>
 
-
-
         <section class="partnerSection " id="noneVisible">
-            <h2>Partner</h2>
+            <h2 class="partnerHeader">Partner</h2>
             <hr class="delimiter">
             <div class="partnersImg">
-                <div class="partner"><img src="./assets/img/partners/mozilla.svg" alt="Mozilla org"></div>
-                <div class="partner"><img src="./assets/img/partners/google.svg" alt="Google"></div>
-                <div class="partner"><img src="./assets/img/partners/naver.svg" alt="Naver"></div>
-                <div class="partner"><img src="./assets/img/partners/daumkakao.svg" alt="Daumkakao"></div>
-                <div class="partner"><img src="./assets/img/partners/airbnb.svg" alt="Airbnb"></div>
+                <div class="partner"><img src="./assets/img/partners/mozilla.svg" alt="Mozilla org" class="part"></div>
+                <div class="partner"><img src="./assets/img/partners/google.svg" alt="Google" class="part"></div>
+                <div class="partner"><img src="./assets/img/partners/naver.svg" alt="Naver" class="part"></div>
+                <div class="partner"><img src="./assets/img/partners/daumkakao.svg" alt="Daumkakao" class="part"></div>
+                <div class="partner"><img src="./assets/img/partners/airbnb.svg" alt="Airbnb" class="part"></div>
             </div>
         </section>
     </main>
@@ -134,18 +132,15 @@
     </main>
   
 
-     <footer>
+      <footer class="footerAbout">
 
         <div class="footerSection mobileFooter">
-            <div class="footerSectionDiv"><img src="./assets/img/someDesktopImg/logoWhite.png" alt="Logo"></div>
+            <div class="footerSectionLogo"><img src="./assets/img/someDesktopImg/logoWhite.png" alt="Logo"></div>
             <div class="footerSectionDiv">
                 <p class="footerdescri">2015 Creative Commons Korea. Some Rights Reserved.</p>
-        
-                <p id="hide">달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
-                    자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
             </div>
         </div>
-        <div class="footerSection desktopFooter">
+         <!-- <div class="footerSection desktopFooter hide">
         
             <div class="footerSectionDiv"><img src="./assets/img/someDesktopImg/summitFooterLogo.svg" alt="Logo" class=" footerSectionimg" id="aboutLogoFooter"></div>
             <div class="footerSectionDiv">
@@ -155,8 +150,10 @@
                     자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
             </div>
         
-        </div>
-</footer>  
+        </div>  -->
+</footer>   
+
+
 <div class="modal hide">
     
     <div class="closeBtn">

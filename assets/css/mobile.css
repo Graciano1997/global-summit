@@ -36,10 +36,19 @@ body {
   flex-direction: column;
 }
 
+.delimiter {
+  background: #f78c89;
+  height: 2px;
+  width: 7%;
+  border: transparent;
+}
+
 .headerContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .headerContainer .navbar {
   width: 100%;
@@ -68,7 +77,6 @@ body {
   background: transparent;
 }
 
-/* Index page style */
 .headlineSection {
   background-image: url(../img/mobileBackground.svg);
   background-size: cover;
@@ -96,7 +104,7 @@ body {
 
 .headlineContentBody {
   margin-top: 22%;
-  background: #F8F8F8;
+  background: #f8f8f8;
   border: 4px solid #fff;
 }
 .headlineContentBody p {
@@ -130,17 +138,18 @@ body {
   flex-direction: column;
   background: url(../img/mainprogramBg.svg);
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   color: #fff;
   align-items: center;
   padding-top: 6%;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
 }
 .mainProgramSection h2 {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -4%;
   font-weight: 400;
+  margin-top: 2%;
 }
 .mainProgramSection #seeHoleProgram {
   display: none;
@@ -148,62 +157,64 @@ body {
 .mainProgramSection .delimiter {
   margin-top: 2%;
   margin-bottom: 10%;
-  background: #a04038;
-  height: 2px;
-  width: 10%;
-  border: transparent;
 }
 
 /* programs */
 .programs {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  align-items: stretch;
+  gap: 8px;
   width: 100%;
 }
 .programs .program {
   background: url(../img/mainprogramBg.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 1%;
+  color: #d3d3d3;
 }
 .programs .program .programBg {
   display: grid;
-  grid-template: 100fr/10fr 20fr 70fr;
+  grid-template: 100fr/20fr 20fr 60fr;
   align-items: center;
-  -moz-column-gap: 3px;
-       column-gap: 3px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
   background-color: rgba(247, 247, 247, 0.1019607843);
 }
+.programs .program .programBg .programImage {
+  padding-left: 15px;
+}
+.programs .program .programBg .programImage .programImageItem {
+  width: 100%;
+  height: 100%;
+}
 .programs .program .programBg .phase h3 {
-  color: #FF5438;
+  color: #ff5438;
   font-size: 14px;
   line-height: 25px;
   letter-spacing: -1%;
 }
 .programs .program .programBg .activity .activitydescription {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 22.3px;
   letter-spacing: 6%;
-  font-weight: bold;
   text-align: left;
-  width: 100%;
+  padding: 8px;
 }
 
 /* btn join us */
 .join {
-  margin-top: 8%;
+  margin-top: 12%;
   font-size: 16px;
   letter-spacing: -1%;
   line-height: 28px;
-  font-weight: bolder;
   width: 90%;
   margin-left: 10%;
   margin-right: 10%;
-  background: #FF4F38;
+  background: #ff4f38;
   color: #fff;
   border: transparent;
-  height: 68px;
+  padding: 6%;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -225,14 +236,11 @@ body {
   letter-spacing: -5%;
   font-weight: 400;
   margin-top: -10%;
+  color: #272a31;
 }
 .featuredSpeakerSection .delimiter {
   margin-top: -2%;
   margin-bottom: 10%;
-  background: #a04038;
-  height: 2px;
-  width: 10%;
-  border: transparent;
 }
 
 .speakers {
@@ -240,7 +248,7 @@ body {
   gap: 12px;
   flex-direction: column;
   align-items: stretch;
-  margin-top: 4%;
+  margin-top: -4%;
 }
 .speakers .speaker {
   display: flex;
@@ -248,7 +256,7 @@ body {
   align-items: center;
 }
 .speakers .speaker div .speakerDelimiter {
-  width: 10%;
+  width: 7%;
   margin-bottom: 2%;
   margin-top: 2%;
 }
@@ -261,7 +269,8 @@ body {
   font-weight: bold;
   line-height: 17.1px;
   letter-spacing: -5%;
-  color: #000;
+  color: #272a31;
+  font-style: normal;
 }
 .speakers .speaker div h4 {
   font-size: 15px;
@@ -275,8 +284,9 @@ body {
   font-weight: bold;
   line-height: 14.9px;
   letter-spacing: -2%;
-  color: #F78C89;
+  color: #f78c89;
   text-align: left;
+  font-style: italic;
 }
 
 .seeMore {
@@ -284,7 +294,6 @@ body {
   justify-content: center;
   width: 90%;
   margin-top: 5%;
-  color: #000;
   padding-top: 2%;
   padding-bottom: 2%;
   gap: 8px;
@@ -293,13 +302,53 @@ body {
   font-size: 11px;
   line-height: 28px;
   letter-spacing: -5%;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #fff;
-  border: 1px solid #d3d3d3 transparent;
+  border: 1px solid #d3d3d3;
   margin-bottom: 2%;
+  color: #272a31;
 }
 .seeMore .btnbackground {
   margin-left: 2%;
+}
+
+.creativeCommonSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.creativeCommonSection .delimiter {
+  margin-top: 3%;
+}
+.creativeCommonSection .creativeCommonHeader {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -2%;
+  font-weight: bold;
+  color: #2c2c2c;
+  padding-top: 1%;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 20%;
+}
+.creativeCommonSection .creativeCommonDescription {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  letter-spacing: -3%;
+  text-align: center;
+  color: #838383;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+.creativeCommonSection .creativeCommonImg {
+  width: 90%;
+  height: 100%;
 }
 
 /* About page style */
@@ -338,10 +387,6 @@ body {
   display: none;
   margin-top: 2%;
   margin-bottom: 10%;
-  background: #a04038;
-  height: 2px;
-  width: 10%;
-  border: transparent;
 }
 .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentBody {
   display: flex;
@@ -356,7 +401,7 @@ body {
 }
 .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentBody p {
   font-size: 14px;
-  color: #000;
+  color: #272a31;
   font-weight: 400;
   text-align: center;
   letter-spacing: -6%;
@@ -374,15 +419,20 @@ body {
   color: #595959;
   font-weight: bolder;
 }
-.aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter p {
+.aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter .aboutHeadlinedescri {
   font-weight: bold;
   font-size: 12px;
   line-height: 25px;
   color: #7a7a7a;
   text-align: center;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 .aboutHeadlineSection .aboutHeadlineContent .aboutHeadlineContentFooter .email {
-  color: #5F5F5F;
+  text-align: center;
+  padding-left: 12%;
+  padding-right: 12%;
+  color: #5f5f5f;
   font-weight: bolder;
   text-decoration: underline;
   padding-bottom: 6%;
@@ -392,7 +442,7 @@ body {
   background: url(../img/footerBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 8%;
   display: flex;
   flex-direction: column;
@@ -400,20 +450,23 @@ body {
   justify-content: center;
   color: #fff;
 }
+.partnerSection .partnerHeader {
+  margin-top: -1%;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -1%;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
 .partnerSection .partnersImg {
-  padding-top: 8%;
+  padding-top: 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
   gap: 12px;
   justify-content: space-around;
-}
-.partnerSection .partnersImg .partnerHeader {
-  font-size: 20px;
-  line-height: 28px;
-  margin-top: -10%;
-  letter-spacing: -1%;
-  font-weight: 400;
 }
 .partnerSection .partnersImg .partner .part {
   width: 100%;
@@ -430,7 +483,7 @@ body {
   padding-bottom: 10%;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #E0E2E7;
+  border-top: 1px solid #e0e2e7;
 }
 .seePastSection hr {
   margin-top: -1%;
@@ -441,7 +494,7 @@ body {
   letter-spacing: -2%;
   padding-top: 1%;
   font-weight: bold;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 .seePastSection .seePastDescription {
   color: #838383;
@@ -450,73 +503,57 @@ body {
   line-height: 21px;
   letter-spacing: -3%;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .seePastSection .seePastSectionPictures {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 25px;
   margin-top: 8%;
 }
 .seePastSection .seePastSectionPictures .lastsummits {
+  width: 90%;
+}
+.seePastSection .seePastSectionPictures .lastsummits .lastimg {
+  text-align: center;
   width: 100%;
   height: 100%;
 }
 
-.creativeCommonSection {
+.footerAbout {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 5%;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  margin-top: 5%;
+  justify-content: center;
+  padding: 5%;
 }
-.creativeCommonSection .creativeCommonHeader {
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -2%;
-  font-weight: bold;
-  color: #2C2C2C;
-  padding-top: 1%;
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-.creativeCommonSection .creativeCommonDescription {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 21px;
-  letter-spacing: -3%;
-  text-align: center;
-  color: #838383;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 10%;
-  padding-top: 5%;
-}
-.creativeCommonSection .creativeCommonImg {
-  width: 100%;
-  height: 100%;
-}
-
-.footerSection {
-  display: flex;
-  padding-top: 8%;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-bottom: 8%;
-  background: #fff;
-  gap: 15px;
+.footerAbout .footerSection {
+  display: grid;
+  grid-template: 100%/50% 50%;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding-top: 3%;
+  justify-items: center;
+  padding-bottom: 3%;
   font-size: 10px;
   color: #3b3e45;
   font-weight: bold;
-  justify-content: center;
-  align-items: center;
   line-height: 13.1px;
   letter-spacing: -1%;
 }
-.footerSection .footerSectionDiv .footerSectionimg {
+.footerAbout .footerSection .footerSectionLogo {
+  padding: 2%;
+}
+.footerAbout .footerSection .footerSectionLogo img {
   width: 100%;
   height: 100%;
+}
+.footerAbout .footerSection .footerSectionDiv {
+  display: flex;
+  align-items: end;
+  width: 100%;
 }
 
 .mobileText {
@@ -577,9 +614,6 @@ body {
   text-decoration: none;
   color: #000;
 }
-.modal .menuList li a img {
-  border: 2px solid black;
-}
 .modal .menuListDown {
   position: absolute;
   bottom: 10%;
@@ -599,8 +633,8 @@ body {
   color: #000;
 }
 .modal .campaign {
-  color: #EC4327;
-  border: 1px solid #EC4327;
+  color: #ec4327;
+  border: 1px solid #ec4327;
   font-size: 30px;
   padding: 1%;
 }
@@ -622,7 +656,7 @@ body {
   }
 }
 #logout {
-  color: #EC4327;
+  color: #ec4327;
 }
 
 .hide {
