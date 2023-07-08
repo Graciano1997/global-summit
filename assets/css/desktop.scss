@@ -613,7 +613,8 @@
 
     .footerbody {
       display: grid;
-      padding: 5%;
+      padding-top: 5%;
+      padding-bottom: 4%;
       justify-items: center;
       grid-template: 100fr / 50fr 50fr;
       column-gap: 0;
